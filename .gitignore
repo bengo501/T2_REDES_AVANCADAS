@@ -1,0 +1,19 @@
+# resultados de análises
+resultados/
+
+# logs e outputs temporários
+*.log
+*.tmp
+
+# arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# arquivos de configuração local
+.env
+config.local.*
+
+# backups
+*.bak
+*~
+
