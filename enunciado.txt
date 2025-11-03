@@ -1,0 +1,47 @@
+Pontifícia Universidade Católica do Rio Grande do Sul
+Escola Politécnica
+Redes de Computadores Avançadas
+Definição do Segundo Trabalho
+Objetivo
+O objetivo geral deste trabalho é realizar e documentar a análise de vulnerabilidades em dois alvos reais. Essa análise visa identificar falhas de segurança em redes, sistemas ou aplicações, podendo ser conduzida localmente e/ou remotamente. Após a análise, é esperado que o grupo elabore um relatório técnico contendo a descrição das vulnerabilidades encontradas, a análise de seu impacto e sugestões de mitigação ou correção.
+Objetivos específicos:
+Estudar e aplicar técnicas e ferramentas utilizadas em análises de vulnerabilidade;
+Realizar e documentar uma análise prática em dois alvos escolhidos;
+Investigar as vulnerabilidades identificadas, classificar seu risco e propor soluções adequadas para correção.
+Descrição
+O trabalho inicia com a escolha de dois alvos. Os alvos escolhidos devem pertencer a equipamentos (rede doméstica) pertencentes ao grupo ou ao laboratório de redes (sala 301).
+A análise deve abranger as seguintes Etapas:
+1. Obtenção de informações
+2. Mapeamento da rede e identificação de serviços e vulnerabilidades
+3. Documentação, análise de impacto e propostas de correção/mitigação
+A Etapa 1 consiste no uso de ferramentas públicas e técnicas de varredura para coletar informações do alvo. A Etapa 2 envolve identificar serviços expostos e possíveis vulnerabilidades. Já a Etapa 3 trata da análise de impacto de cada falha e proposição de correções. Os resultados devem ser registrados em um relatório, conforme a estrutura sugerida a seguir.
+
+Estrutura do Relatório
+A seguir, apresenta-se uma estrutura que deve ser utilizada para a organização do relatório.
+1. Introdução
+Alvo Escolhido e Escopo: Descrição clara do alvo (IPs, domínios) e do que estava dentro e fora do escopo do teste.
+Justificativa da Escolha: Por que este alvo foi escolhido (ex: relevância para aprendizado, ambiente controlado).
+2. Etapa 1-Obtenção de informações
+Descrição dos métodos e ferramentas utilizadas.
+Resultados
+3. Etapa 2-Mapeamento da rede e identificação de serviços e vulnerabilidades
+Descrição dos tipos de varreduras e ferramentas utilizadas.
+Resultados e descobertas:
+Serviços em execução.
+Sistemas operacionais detectados.
+Superfície de ataque identificada.
+Tabela ou lista com as vulnerabilidades detectadas:
+Serviço ou sistema afetado.
+Descrição da falha.
+Severidade (Crítica, Alta, Média, Baixa, com pontuação CVSS (Common Vulnerability Scoring System), padrão aberto usado para avaliar a gravidade de vulnerabilidades, se disponível).
+Referência (ex: CVE (Common Vulnerabilities and Exposures), sistema de identificação pública para vulnerabilidades de segurança).
+4. Etapa 3-Documentação, análise de impacto e propostas de correção/mitigação
+Para cada vulnerabilidade encontrada, descrever:
+Análise do impacto (O que um atacante poderia fazer se explorasse essa falha).
+Proposta de Correção/Mitigação
+5. Conclusão
+Resumo geral dos achados e da importância das correções propostas.
+Resultados e Entrega
+Grupos: Até 4 componentes.
+Data Entrega e apresentação: 11/11
+Obs.: Todos os participantes devem estar presentes na apresentação em sala de aula, onde o grupo deverá explicar sua abordagem e os resultados obtidos.
