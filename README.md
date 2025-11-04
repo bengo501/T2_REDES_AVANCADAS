@@ -181,30 +181,5 @@ arquivos temporários que podem ser deletados.
 - **kali linux:** https://www.kali.org/docs/
 - **nikto:** https://cirt.net/nikto2-docs/
 
-## suporte
-
-### dúvidas sobre estrutura?
-
-consulte: **[docs/estrutura do projeto](docs/ESTRUTURA_PROJETO.md)**
-
-### dúvidas sobre tecnologias?
-
-consulte: **[docs/tecnologias utilizadas](docs/TECNOLOGIAS_UTILIZADAS.md)**
-
-### dúvidas sobre guias?
-
-consulte: **[guias/índice de guias](guias/README.md)**
-
-### dúvidas sobre scripts?
-
-consulte: **[scripts/documentação](scripts/README.md)**
-
-## entrega
-
-- **data:** 11/11
-- **entregável:** relatório completo (`relatorio.md`)
-- **apresentação:** todos os integrantes devem estar presentes
-
----
 
 **boa sorte com o trabalho!**
