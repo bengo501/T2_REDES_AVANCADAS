@@ -1,124 +1,150 @@
-# scripts de análise
+# scripts de automação
 
-scripts utilitários para auxiliar na execução das análises de vulnerabilidade.
+documentação dos scripts de automação organizados por etapa.
 
-## requisitos
+## estrutura dos scripts
 
-- sistema operacional linux ou wsl (windows subsystem for linux)
-- ferramentas instaladas:
-  - nmap
-  - dig
-  - whois
-  - curl
-  - (opcional) nikto, whatweb, dirb, gobuster
+```
+scripts/
+├── etapa1/          # scripts da etapa 1 (obtenção de informações)
+├── etapa2/          # scripts da etapa 2 (mapeamento e vulnerabilidades)
+├── etapa3/          # scripts da etapa 3 (análise de impacto)
+└── completos/       # scripts que executam tudo
+```
+
+## scripts por etapa
+
+### etapa 1: obtenção de informações
+
+**scripts/etapa1/coleta_informacoes.sh**
+- coleta informações básicas (whois, dns, nslookup)
+- uso: `./scripts/etapa1/coleta_informacoes.sh <alvo>`
+
+---
+
+### etapa 2: mapeamento e vulnerabilidades
+
+**scripts/etapa2/varredura_nmap.sh**
+- varreduras nmap completas
+- uso: `./scripts/etapa2/varredura_nmap.sh <alvo>`
+
+**scripts/etapa2/varredura_web.sh**
+- varreduras de vulnerabilidades web
+- uso: `./scripts/etapa2/varredura_web.sh <url>`
+
+**scripts/etapa2/minha_parte_trabalho.sh**
+- script completo para integrante do grupo
+- uso: `./scripts/etapa2/minha_parte_trabalho.sh <alvo>`
+
+**scripts/etapa2/analise_completa_alvo1.sh**
+- análise completa do alvo 1
+- uso: `./scripts/etapa2/analise_completa_alvo1.sh <ip>`
+
+**scripts/etapa2/analise_completa_alvo2.sh**
+- análise completa do alvo 2
+- uso: `./scripts/etapa2/analise_completa_alvo2.sh <ip>`
+
+---
+
+### etapa 3: análise de impacto e preenchimento
+
+**scripts/etapa3/preencher_etapa1.sh**
+- executa etapa 1 e prepara resultados
+- uso: `./scripts/etapa3/preencher_etapa1.sh <ip1> <ip2>`
+
+**scripts/etapa3/preencher_etapa2.sh**
+- executa etapa 2 e prepara resultados
+- uso: `./scripts/etapa3/preencher_etapa2.sh <ip1> <ip2>`
+
+**scripts/etapa3/preencher_etapa3.sh**
+- gera análise da etapa 3
+- uso: `./scripts/etapa3/preencher_etapa3.sh`
+
+**scripts/etapa3/gerar_relatorio_resumo.sh**
+- gera resumo dos resultados
+- uso: `./scripts/etapa3/gerar_relatorio_resumo.sh`
+
+---
+
+### scripts completos
+
+**scripts/completos/preencher_relatorio_completo.sh**
+- executa todas as etapas em sequência
+- uso: `./scripts/completos/preencher_relatorio_completo.sh <ip1> <ip2>`
+
+**scripts/completos/descobrir_dispositivos_rede.sh**
+- descobre dispositivos na rede
+- uso: `./scripts/completos/descobrir_dispositivos_rede.sh`
+
+**scripts/completos/verificar_instalacao.sh**
+- verifica se ferramentas estão instaladas
+- uso: `./scripts/completos/verificar_instalacao.sh`
+
+---
 
 ## como usar
 
-### 1. tornar scripts executáveis
+### tornar scripts executáveis
 
 ```bash
-chmod +x scripts/*.sh
+# todos os scripts
+chmod +x scripts/**/*.sh
+
+# ou por diretório
+chmod +x scripts/etapa1/*.sh
+chmod +x scripts/etapa2/*.sh
+chmod +x scripts/etapa3/*.sh
+chmod +x scripts/completos/*.sh
 ```
 
-### 2. executar os scripts
-
-#### coleta de informações (etapa 1)
+### executar scripts
 
 ```bash
-./scripts/coleta_informacoes.sh exemplo.com
-./scripts/coleta_informacoes.sh 192.168.1.1
+# exemplo: executar script da etapa 1
+./scripts/etapa1/coleta_informacoes.sh 192.168.1.1
+
+# exemplo: executar script completo
+./scripts/completos/preencher_relatorio_completo.sh 192.168.1.105 192.168.1.1
 ```
 
-este script executa:
-- whois
-- dns lookups (a, mx, ns, txt)
-- nslookup
+---
 
-resultados salvos em: `resultados/<alvo>/`
+## recomendações
 
-#### varredura nmap (etapa 2)
+### para iniciantes
 
-```bash
-./scripts/varredura_nmap.sh 192.168.1.1
-```
+use scripts completos:
+- `scripts/completos/preencher_relatorio_completo.sh` - executa tudo
 
-este script executa:
-- varredura rápida de portas comuns
-- varredura completa com detecção de versões
-- detecção de sistema operacional
-- varredura udp
-- (opcional) varredura de todas as portas
+### para aprendizado
 
-resultados salvos em: `resultados/<alvo>/`
+use scripts individuais por etapa:
+- `scripts/etapa1/` - etapa 1
+- `scripts/etapa2/` - etapa 2
+- `scripts/etapa3/` - etapa 3
 
-#### varredura web (etapa 2)
+### para trabalho em grupo
 
-```bash
-./scripts/varredura_web.sh http://exemplo.com
-```
+use scripts específicos:
+- `scripts/etapa2/minha_parte_trabalho.sh` - para integrante
 
-este script executa:
-- nikto (se disponível)
-- whatweb (se disponível)
-- análise de headers http
-- (opcional) dirb ou gobuster
+---
 
-resultados salvos em: `resultados/<url>/`
+## requisitos
 
-#### gerar resumo
+todos os scripts requerem:
+- sistema operacional linux (kali linux, ubuntu, debian, ou wsl)
+- ferramentas instaladas (nmap, nikto, whois, dig, curl)
+- privilégios root para algumas varreduras (sudo)
 
-```bash
-./scripts/gerar_relatorio_resumo.sh
-```
+---
 
-consolida informações dos resultados para facilitar preenchimento do relatório.
+## documentação adicional
 
-## notas importantes
+- `guias/SEQUENCIA_COMANDOS_COMPLETA.md` - sequência completa de comandos
+- `guias/guia_ferramentas.md` - guia de ferramentas
+- `docs/TECNOLOGIAS_UTILIZADAS.md` - tecnologias utilizadas
 
-1. **sempre obtenha autorização** antes de executar varreduras
-2. os scripts salvam resultados em `resultados/` (que está no .gitignore)
-3. ajuste os scripts conforme necessário para seu ambiente
-4. revise os resultados antes de incluir no relatório
-5. alguns scripts podem demorar bastante tempo para completar
+---
 
-## uso em windows
-
-se estiver usando windows:
-
-1. **wsl (recomendado):**
-   - instale wsl e ubuntu
-   - execute os scripts dentro do wsl
-
-2. **git bash:**
-   - pode funcionar, mas algumas ferramentas podem não estar disponíveis
-
-3. **máquina virtual linux:**
-   - use kali linux ou similar
-   - copie os scripts para a vm
-
-## personalização
-
-sinta-se livre para modificar os scripts conforme necessário:
-- ajustar parâmetros das ferramentas
-- adicionar novas ferramentas
-- modificar formato de saída
-- adicionar validações
-
-## exemplo de uso completo
-
-```bash
-# etapa 1: coleta de informações
-./scripts/coleta_informacoes.sh exemplo.com
-
-# etapa 2: varredura de rede
-./scripts/varredura_nmap.sh 192.168.1.1
-
-# etapa 2: varredura web (se aplicável)
-./scripts/varredura_web.sh http://exemplo.com
-
-# gerar resumo
-./scripts/gerar_relatorio_resumo.sh
-
-# depois, preencher relatorio.md com os resultados
-```
-
+**scripts organizados para facilitar o trabalho!**

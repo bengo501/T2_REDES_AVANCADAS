@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Nov  4 10:58:48 2025 as: nmap -F -oN resultados/alvo1/scan_rapido_20251104_105848.txt -oX resultados/alvo1/scan_rapido_20251104_105848.xml 192.168.0.20 -->
+<nmaprun scanner="nmap" args="nmap -F -oN resultados/alvo1/scan_rapido_20251104_105848.txt -oX resultados/alvo1/scan_rapido_20251104_105848.xml 192.168.0.20" start="1762264728" startstr="Tue Nov  4 10:58:48 2025" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1762264728" endtime="1762264729"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="192.168.0.20" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="100">
+<extrareasons reason="conn-refused" count="100"/>
+</extraports>
+</ports>
+<times srtt="915618" rttvar="266690" to="1982378"/>
+</host>
+<runstats><finished time="1762264729" timestr="Tue Nov  4 10:58:49 2025" elapsed="1.25" summary="Nmap done at Tue Nov  4 10:58:49 2025; 1 IP address (1 host up) scanned in 1.25 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,4 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-11-04 10:54 -03
+Nmap scan report for 172.17.198.160
+Host is up (0.000043s latency).
+Nmap done: 256 IP addresses (1 host up) scanned in 6.45 seconds

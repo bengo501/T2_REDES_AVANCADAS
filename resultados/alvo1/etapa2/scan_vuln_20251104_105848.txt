@@ -1,0 +1,9 @@
+# Nmap 7.80 scan initiated Tue Nov  4 11:01:10 2025 as: nmap --script vuln -oN resultados/alvo1/scan_vuln_20251104_105848.txt -oX resultados/alvo1/scan_vuln_20251104_105848.xml 192.168.0.20
+Nmap scan report for 192.168.0.20
+Host is up (0.0057s latency).
+Not shown: 999 closed ports
+PORT     STATE SERVICE
+8200/tcp open  trivnet1
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+
+# Nmap done at Tue Nov  4 11:01:44 2025 -- 1 IP address (1 host up) scanned in 33.28 seconds

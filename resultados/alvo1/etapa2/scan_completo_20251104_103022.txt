@@ -1,0 +1,2 @@
+# Nmap 7.80 scan initiated Tue Nov  4 10:30:25 2025 as: nmap -sV -sC -oN resultados/alvo1/scan_completo_20251104_103022.txt -oX resultados/alvo1/scan_completo_20251104_103022.xml 192.168.1.1
+# Nmap done at Tue Nov  4 10:30:29 2025 -- 1 IP address (0 hosts up) scanned in 3.37 seconds

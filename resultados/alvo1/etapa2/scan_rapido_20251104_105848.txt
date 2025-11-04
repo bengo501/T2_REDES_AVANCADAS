@@ -1,0 +1,6 @@
+# Nmap 7.80 scan initiated Tue Nov  4 11:14:24 2025 as: nmap -F -oN resultados/alvo1/scan_rapido_20251104_105848.txt 192.168.0.20
+Nmap scan report for 192.168.0.20
+Host is up (0.0028s latency).
+All 100 scanned ports on 192.168.0.20 are closed
+
+# Nmap done at Tue Nov  4 11:14:27 2025 -- 1 IP address (1 host up) scanned in 2.63 seconds

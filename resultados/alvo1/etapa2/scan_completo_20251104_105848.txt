@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Tue Nov  4 10:58:49 2025 as: nmap -sV -sC -oN resultados/alvo1/scan_completo_20251104_105848.txt -oX resultados/alvo1/scan_completo_20251104_105848.xml 192.168.0.20
+Nmap scan report for 192.168.0.20
+Host is up (0.0054s latency).
+Not shown: 999 closed ports
+PORT     STATE SERVICE   VERSION
+8200/tcp open  trivnet1?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8200-TCP:V=7.80%I=7%D=11/4%Time=690A06BB%P=x86_64-pc-linux-gnu%r(Ge
+SF:nericLines,2,"\r\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov  4 11:01:10 2025 -- 1 IP address (1 host up) scanned in 140.45 seconds
