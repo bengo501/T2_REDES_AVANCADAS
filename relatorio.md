@@ -1,18 +1,21 @@
-# relatório de análise de vulnerabilidades
+# Relatório de análise de vulnerabilidades
 
-**disciplina:** redes de computadores avançadas  
-**universidade:** pontifícia universidade católica do rio grande do sul  
-**escola politécnica**  
-**data:** [preencher]  
-**grupo:** [preencher nomes dos componentes]
+**disciplina:** redes de computadores avançadas
+**universidade:** pontifícia universidade católica do rio grande do sul
+**escola politécnica**
+**data:** [preencher]
+**grupo:** Bernardo Klein Heitz
 
----
+    João Pedro Aiolfi
+
+    Lucas Lantmann
 
 ## 1. introdução
 
 ### 1.1 alvo escolhido e escopo
 
 #### alvo 1
+
 - **nome/identificação:** [descrever o primeiro alvo]
 - **endereço ip:** [ip do primeiro alvo]
 - **domínio (se aplicável):** [domínio, se houver]
@@ -22,7 +25,8 @@
   - **fora do escopo:**
     - [listar o que foi excluído da análise]
 
-#### alvo 2
+#### Alvo 2
+
 - **nome/identificação:** [descrever o segundo alvo]
 - **endereço ip:** [ip do segundo alvo]
 - **domínio (se aplicável):** [domínio, se houver]
@@ -36,11 +40,11 @@
 
 [explicar por que esses alvos foram escolhidos. exemplo: relevância para aprendizado, ambiente controlado, disponibilidade de acesso, etc.]
 
----
+## 2. Etapa 1 
 
-## 2. etapa 1 - obtenção de informações
+## Obtenção de informações
 
-### 2.1 métodos e ferramentas utilizadas
+### 2.1 Métodos e ferramentas utilizadas
 
 [descrever as técnicas e ferramentas utilizadas para coletar informações dos alvos. exemplo:]
 
@@ -67,9 +71,9 @@
 [exemplo: informações de whois, dns lookup, etc.]
 ```
 
----
+## 3. Etapa 2
 
-## 3. etapa 2 - mapeamento da rede e identificação de serviços e vulnerabilidades
+## Mapeamento da rede e identificação de serviços e vulnerabilidades
 
 ### 3.1 tipos de varreduras e ferramentas utilizadas
 
@@ -91,10 +95,10 @@
 
 **serviços em execução:**
 
-| porta | protocolo | serviço | versão | estado |
-|-------|-----------|---------|--------|--------|
-| [porta] | [tcp/udp] | [nome] | [versão] | [aberta/fechada] |
-| ... | ... | ... | ... | ... |
+| porta   | protocolo | serviço | versão   | estado           |
+| ------- | --------- | -------- | --------- | ---------------- |
+| [porta] | [tcp/udp] | [nome]   | [versão] | [aberta/fechada] |
+| ...     | ...       | ...      | ...       | ...              |
 
 **sistemas operacionais detectados:**
 
@@ -108,19 +112,19 @@
 
 **vulnerabilidades detectadas:**
 
-| # | serviço/sistema afetado | descrição da falha | severidade | cvss | referência (cve) |
-|---|------------------------|-------------------|------------|------|------------------|
-| 1 | [serviço] | [descrição] | [crítica/alta/média/baixa] | [pontuação] | [cve-id] |
-| 2 | ... | ... | ... | ... | ... |
+| # | serviço/sistema afetado | descrição da falha | severidade                   | cvss          | referência (cve) |
+| - | ------------------------ | -------------------- | ---------------------------- | ------------- | ----------------- |
+| 1 | [serviço]               | [descrição]        | [crítica/alta/média/baixa] | [pontuação] | [cve-id]          |
+| 2 | ...                      | ...                  | ...                          | ...           | ...               |
 
 #### alvo 2
 
 **serviços em execução:**
 
-| porta | protocolo | serviço | versão | estado |
-|-------|-----------|---------|--------|--------|
-| [porta] | [tcp/udp] | [nome] | [versão] | [aberta/fechada] |
-| ... | ... | ... | ... | ... |
+| porta   | protocolo | serviço | versão   | estado           |
+| ------- | --------- | -------- | --------- | ---------------- |
+| [porta] | [tcp/udp] | [nome]   | [versão] | [aberta/fechada] |
+| ...     | ...       | ...      | ...       | ...              |
 
 **sistemas operacionais detectados:**
 
@@ -134,10 +138,10 @@
 
 **vulnerabilidades detectadas:**
 
-| # | serviço/sistema afetado | descrição da falha | severidade | cvss | referência (cve) |
-|---|------------------------|-------------------|------------|------|------------------|
-| 1 | [serviço] | [descrição] | [crítica/alta/média/baixa] | [pontuação] | [cve-id] |
-| 2 | ... | ... | ... | ... | ... |
+| # | serviço/sistema afetado | descrição da falha | severidade                   | cvss          | referência (cve) |
+| - | ------------------------ | -------------------- | ---------------------------- | ------------- | ----------------- |
+| 1 | [serviço]               | [descrição]        | [crítica/alta/média/baixa] | [pontuação] | [cve-id]          |
+| 2 | ...                      | ...                  | ...                          | ...           | ...               |
 
 ---
 
@@ -203,6 +207,7 @@
 [resumo geral dos achados da análise de ambos os alvos]
 
 **principais descobertas:**
+
 - [ponto 1]
 - [ponto 2]
 - [ponto 3]
@@ -239,4 +244,3 @@
 - cve databases consultadas
 - artigos ou materiais de estudo
 - outras referências relevantes
-
