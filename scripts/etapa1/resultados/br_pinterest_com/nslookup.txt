@@ -1,0 +1,13 @@
+;; Got recursion not available from 10.255.255.254
+Server:		10.255.255.254
+Address:	10.255.255.254#53
+
+Non-authoritative answer:
+br.pinterest.com	canonical name = www.pinterest.com.
+www.pinterest.com	canonical name = www-pinterest-com.gslb.pinterest.com.
+www-pinterest-com.gslb.pinterest.com	canonical name = www.gslb.pinterest.net.
+www.gslb.pinterest.net	canonical name = www.pinterest.com.edgekey.net.
+www.pinterest.com.edgekey.net	canonical name = e6449.a.akamaiedge.net.
+Name:	e6449.a.akamaiedge.net
+Address: 2.20.225.31
+

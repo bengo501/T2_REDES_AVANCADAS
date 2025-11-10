@@ -1,0 +1,22 @@
+192.168.0.63
+
+; <<>> DiG 9.18.39-0ubuntu0.22.04.2-Ubuntu <<>> 192.168.0.63
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 15206
+;; flags: qr aa rd ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;192.168.0.63.			IN	A
+
+;; ANSWER SECTION:
+192.168.0.63.		604800	IN	A	192.168.0.63
+
+;; Query time: 0 msec
+;; SERVER: 10.255.255.254#53(10.255.255.254) (UDP)
+;; WHEN: Mon Nov 10 00:54:43 -03 2025
+;; MSG SIZE  rcvd: 69
+

@@ -1,0 +1,5 @@
+Server:		10.255.255.254
+Address:	10.255.255.254#53
+
+** server can't find pc-integrante.lab: NXDOMAIN
+

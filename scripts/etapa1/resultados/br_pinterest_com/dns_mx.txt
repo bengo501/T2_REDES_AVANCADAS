@@ -1,0 +1,31 @@
+www.pinterest.com.
+www-pinterest-com.gslb.pinterest.com.
+www.gslb2.pinterest.net.
+prod.pinterest.global.map.fastly.net.
+
+; <<>> DiG 9.18.39-0ubuntu0.22.04.2-Ubuntu <<>> br.pinterest.com mx
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 41597
+;; flags: qr rd; QUERY: 1, ANSWER: 4, AUTHORITY: 1, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1220
+;; QUESTION SECTION:
+;br.pinterest.com.		IN	MX
+
+;; ANSWER SECTION:
+br.pinterest.com.	1332	IN	CNAME	www.pinterest.com.
+www.pinterest.com.	48	IN	CNAME	www-pinterest-com.gslb.pinterest.com.
+www-pinterest-com.gslb.pinterest.com. 262 IN CNAME www.gslb2.pinterest.net.
+www.gslb2.pinterest.net. 262	IN	CNAME	prod.pinterest.global.map.fastly.net.
+
+;; AUTHORITY SECTION:
+fastly.net.		30	IN	SOA	ns1.fastly.net. hostmaster.fastly.com. 2017052201 3600 600 604800 30
+
+;; Query time: 7 msec
+;; SERVER: 10.255.255.254#53(10.255.255.254) (UDP)
+;; WHEN: Mon Nov 10 00:37:18 -03 2025
+;; MSG SIZE  rcvd: 242
+

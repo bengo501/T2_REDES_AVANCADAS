@@ -145,6 +145,55 @@ dig --version
 
 ---
 
+## opção 4: macos
+
+### passo 1: instalar homebrew (se ainda não tiver)
+
+1. abrir o terminal.
+2. executar:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+3. seguir as instruções exibidas (o script pedirá senha do usuário).
+4. ao final, adicionar o homebrew ao `PATH` conforme instruções mostradas (por exemplo, rodando `echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile` no mac com chip m1/m2).
+
+### passo 2: atualizar homebrew
+
+```bash
+brew update
+```
+
+### passo 3: instalar ferramentas necessárias
+
+```bash
+brew install nmap nikto whois bind curl
+```
+
+> o pacote `bind` fornece os utilitários `dig` e `nslookup`.
+
+### passo 4: verificar instalação
+
+```bash
+nmap --version
+nikto --version
+whois --version
+dig --version
+```
+
+se todos os comandos retornarem versão, o ambiente está pronto.
+
+### passo 5: ferramentas opcionais
+
+```bash
+brew install wireshark tcpdump metasploit
+```
+
+wireshark exige permissões adicionais para captura sem sudo; siga as instruções exibidas após a instalação, se necessário.
+
+---
+
 ## verificação rápida
 
 ### script de verificação
@@ -206,6 +255,7 @@ chmod +x verificar_instalacao.sh
 ### problema: "comando não encontrado"
 
 **solução:** ferramenta não instalada. instalar com:
+
 ```bash
 sudo apt install <nome_da_ferramenta>
 ```
@@ -213,6 +263,7 @@ sudo apt install <nome_da_ferramenta>
 ### problema: "permissão negada"
 
 **solução:** precisa usar sudo:
+
 ```bash
 sudo <comando>
 ```
@@ -239,5 +290,3 @@ depois que tudo estiver instalado:
 ---
 
 **boa instalação!**
-
-
