@@ -1,0 +1,12 @@
+$ ping -c 6 181.213.132.4
+PING 181.213.132.4 (181.213.132.4) 56(84) bytes of data.
+64 bytes from 181.213.132.4: icmp_seq=1 ttl=59 time=9.98 ms
+64 bytes from 181.213.132.4: icmp_seq=2 ttl=59 time=9.23 ms
+64 bytes from 181.213.132.4: icmp_seq=3 ttl=59 time=34.9 ms
+64 bytes from 181.213.132.4: icmp_seq=4 ttl=59 time=23.1 ms
+64 bytes from 181.213.132.4: icmp_seq=5 ttl=59 time=11.2 ms
+64 bytes from 181.213.132.4: icmp_seq=6 ttl=59 time=17.4 ms
+
+--- 181.213.132.4 ping statistics ---
+6 packets transmitted, 6 received, 0% packet loss, time 5009ms
+rtt min/avg/max/mdev = 9.232/17.639/34.894/9.121 ms

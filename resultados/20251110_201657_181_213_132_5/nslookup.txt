@@ -1,0 +1,6 @@
+$ nslookup 181.213.132.5
+;; Got recursion not available from 172.29.240.1
+5.132.213.181.in-addr.arpa	name = b5d58405.virtua.com.br.
+
+Authoritative answers can be found from:
+

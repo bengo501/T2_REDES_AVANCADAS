@@ -1,0 +1,4 @@
+$ nslookup 192.168.0.86
+;; Got recursion not available from 172.29.240.1
+** server can't find 86.0.168.192.in-addr.arpa: NXDOMAIN
+

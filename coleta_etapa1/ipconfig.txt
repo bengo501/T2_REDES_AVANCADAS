@@ -1,0 +1,86 @@
+
+Configuraá∆o de IP do Windows
+
+   Nome do host. . . . . . . . . . . . . . . . : Bengo
+   Sufixo DNS prim†rio . . . . . . . . . . . . : 
+   Tipo de n¢. . . . . . . . . . . . . . . . . : h°brido
+   Roteamento de IP ativado. . . . . . . . . . : n∆o
+   Proxy WINS ativado. . . . . . . . . . . . . : n∆o
+
+Adaptador Ethernet Ethernet:
+
+   Estado da m°dia. . . . . . . . . . . . . .  : m°dia desconectada
+   Sufixo DNS espec°fico de conex∆o. . . . . . : 
+   Descriá∆o . . . . . . . . . . . . . . . . . : Killer E2600 Gigabit Ethernet Controller
+   Endereáo F°sico . . . . . . . . . . . . . . : 70-69-79-AD-34-B3
+   DHCP Habilitado . . . . . . . . . . . . . . : Sim
+   Configuraá∆o Autom†tica Habilitada. . . . . : Sim
+
+Adaptador de Rede sem Fio Conex∆o Local* 1:
+
+   Estado da m°dia. . . . . . . . . . . . . .  : m°dia desconectada
+   Sufixo DNS espec°fico de conex∆o. . . . . . : 
+   Descriá∆o . . . . . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   Endereáo F°sico . . . . . . . . . . . . . . : 62-A5-E2-E9-0A-61
+   DHCP Habilitado . . . . . . . . . . . . . . : Sim
+   Configuraá∆o Autom†tica Habilitada. . . . . : Sim
+
+Adaptador de Rede sem Fio Conex∆o Local* 3:
+
+   Estado da m°dia. . . . . . . . . . . . . .  : m°dia desconectada
+   Sufixo DNS espec°fico de conex∆o. . . . . . : 
+   Descriá∆o . . . . . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #3
+   Endereáo F°sico . . . . . . . . . . . . . . : 60-A5-E2-E9-0A-62
+   DHCP Habilitado . . . . . . . . . . . . . . : Sim
+   Configuraá∆o Autom†tica Habilitada. . . . . : Sim
+
+Adaptador de Rede sem Fio Wi-Fi:
+
+   Sufixo DNS espec°fico de conex∆o. . . . . . : 
+   Descriá∆o . . . . . . . . . . . . . . . . . : Intel(R) Wi-Fi 6 AX201 160MHz
+   Endereáo F°sico . . . . . . . . . . . . . . : 60-A5-E2-E9-0A-61
+   DHCP Habilitado . . . . . . . . . . . . . . : Sim
+   Configuraá∆o Autom†tica Habilitada. . . . . : Sim
+   Endereáo IPv6 . . . . . . . . . . : 2804:14d:4cd6:b384:69df:d940:a092:b461(Preferencial) 
+   Endereáo IPv6 Tempor†rio. . . . . . . . : 2804:14d:4cd6:b384:3de6:78cb:b79f:4db9(Preferencial) 
+   Endereáo IPv6 de link local . . . . . . . . : fe80::dfe:2f33:1664:9020%6(Preferencial) 
+   Endereáo IPv4. . . . . . . .  . . . . . . . : 192.168.0.15(Preferencial) 
+   M†scara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+   Concess∆o Obtida. . . . . . . . . . . . . . : segunda-feira, 10 de novembro de 2025 08:54:58
+   Concess∆o Expira. . . . . . . . . . . . . . : segunda-feira, 10 de novembro de 2025 11:51:22
+   Gateway Padr∆o. . . . . . . . . . . . . . . : fe80::ea20:e2ff:fecb:5fea%6
+                                                 192.168.0.1
+   Servidor DHCP . . . . . . . . . . . . . . . : 192.168.0.1
+   IAID de DHCPv6. . . . . . . . . . . . . . . : 73442786
+   DUID de Cliente DHCPv6. . . . . . . . . . . : 00-01-00-01-29-F5-31-4D-70-69-79-AD-34-B3
+   Servidores DNS. . . . . . . . . . . . . . . : 2804:14d:1:0:181:213:132:4
+                                                 2804:14d:1:0:181:213:132:5
+                                                 181.213.132.4
+                                                 181.213.132.5
+                                                 2804:14d:1:0:181:213:132:4
+                                                 2804:14d:1:0:181:213:132:5
+   NetBIOS em Tcpip. . . . . . . . . . . . . . : Habilitado
+
+Adaptador Ethernet Conex∆o de Rede Bluetooth:
+
+   Estado da m°dia. . . . . . . . . . . . . .  : m°dia desconectada
+   Sufixo DNS espec°fico de conex∆o. . . . . . : 
+   Descriá∆o . . . . . . . . . . . . . . . . . : Bluetooth Device (Personal Area Network)
+   Endereáo F°sico . . . . . . . . . . . . . . : 60-A5-E2-E9-0A-65
+   DHCP Habilitado . . . . . . . . . . . . . . : Sim
+   Configuraá∆o Autom†tica Habilitada. . . . . : Sim
+
+Adaptador Ethernet vEthernet (WSL (Hyper-V firewall)):
+
+   Sufixo DNS espec°fico de conex∆o. . . . . . : 
+   Descriá∆o . . . . . . . . . . . . . . . . . : Hyper-V Virtual Ethernet Adapter
+   Endereáo F°sico . . . . . . . . . . . . . . : 00-15-5D-C2-28-25
+   DHCP Habilitado . . . . . . . . . . . . . . : N∆o
+   Configuraá∆o Autom†tica Habilitada. . . . . : Sim
+   Endereáo IPv6 de link local . . . . . . . . : fe80::28b1:d97e:4e6e:a50d%58(Preferencial) 
+   Endereáo IPv4. . . . . . . .  . . . . . . . : 172.29.240.1(Preferencial) 
+   M†scara de Sub-rede . . . . . . . . . . . . : 255.255.240.0
+   Gateway Padr∆o. . . . . . . . . . . . . . . : 
+   IAID de DHCPv6. . . . . . . . . . . . . . . : 973083997
+   DUID de Cliente DHCPv6. . . . . . . . . . . : 00-01-00-01-29-F5-31-4D-70-69-79-AD-34-B3
+   NetBIOS em Tcpip. . . . . . . . . . . . . . : Habilitado

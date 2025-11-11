@@ -1,0 +1,2 @@
+$ whois alvo.externo
+comando 'whois' não encontrado

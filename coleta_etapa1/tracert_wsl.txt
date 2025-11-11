@@ -1,0 +1,7 @@
+
+Rastreando a rota para Bengo.mshome.net [172.29.240.1]
+com no m ximo 30 saltos:
+
+  1    <1 ms    <1 ms    <1 ms  Bengo.mshome.net [172.29.240.1] 
+
+Rastreamento conclu¡do.

@@ -1,0 +1,39 @@
+$ whois 181.213.132.4
+% IP Client: 179.152.35.152
+ % Copyright (c) Nic.br - Use of this data is governed by the Use and
+% Privacy Policy at https://registro.br/upp . Distribution,
+% commercialization, reproduction, and use for advertising or similar
+% purposes are expressly prohibited.
+% 2025-11-10T22:38:57-03:00 - 179.152.35.152
+
+inetnum:     181.213.0.0/16
+aut-num:     AS28573
+abuse-c:     GRSVI
+owner:       Claro NXT Telecomunicacoes Ltda
+ownerid:     66.970.229/0001-67
+responsible: Suporte Redes
+country:     BR
+owner-c:     GRSVI
+tech-c:      GRSVI
+inetrev:     181.213.0.0/16
+nserver:     ns7.virtua.com.br
+nsstat:      20251108 AA
+nslastaa:    20251108
+nserver:     ns8.virtua.com.br
+nsstat:      20251108 ERR
+nslastaa:    20250927
+created:     20140602
+changed:     20220615
+
+nic-hdl-br:  GRSVI
+person:      Grupo de Seguranï¿½a Vï¿½rtua
+e-mail:      virtua@virtua.com.br
+country:     BR
+created:     20080512
+changed:     20230704
+
+% Security and mail abuse issues should also be addressed to cert.br,
+% respectivelly to cert@cert.br and mail-abuse@cert.br
+%
+% whois.registro.br only accepts exact match queries for domains,
+% registrants, contacts, tickets, providers, IPs, and ASNs.

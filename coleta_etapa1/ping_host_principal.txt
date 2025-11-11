@@ -1,0 +1,14 @@
+
+Disparando 192.168.0.15 com 32 bytes de dados:
+Resposta de 192.168.0.15: bytes=32 tempo<1ms TTL=128
+Resposta de 192.168.0.15: bytes=32 tempo<1ms TTL=128
+Resposta de 192.168.0.15: bytes=32 tempo<1ms TTL=128
+Resposta de 192.168.0.15: bytes=32 tempo<1ms TTL=128
+Resposta de 192.168.0.15: bytes=32 tempo<1ms TTL=128
+Resposta de 192.168.0.15: bytes=32 tempo<1ms TTL=128
+
+Estat¡sticas do Ping para 192.168.0.15:
+    Pacotes: Enviados = 6, Recebidos = 6, Perdidos = 0 (0% de
+             perda),
+Aproximar um n£mero redondo de vezes em milissegundos:
+    M¡nimo = 0ms, M ximo = 0ms, M‚dia = 0ms

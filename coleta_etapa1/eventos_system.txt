@@ -1,0 +1,771 @@
+
+   ProviderName: Microsoft-Windows-DistributedCOM
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 11:15:12          10016 Aviso            As configurações de permissão específico do aplicativo não concedem pe…
+
+   ProviderName: Microsoft-Windows-DNS-Client
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:51:33           1014 Aviso            A resolução de nome para o fonts.shopifycdn.com atingiu o tempo limite…
+10/11/2025 10:48:27           1014 Aviso            A resolução de nome para o _http._tcp.archive.ubuntu.com atingiu o tem…
+
+   ProviderName: Microsoft-Windows-Hyper-V-VmSwitch
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:48:15            291 Informações      Descarregamento RSC modificado para NIC 161C3810-292F-40B8-BD81-5C0798…
+10/11/2025 10:48:15            291 Informações      Descarregamento RSC modificado para NIC 161C3810-292F-40B8-BD81-5C0798…
+10/11/2025 10:48:15            102 Informações      Networking driver in 161C3810-292F-40B8-BD81-5C0798A80F6B is loaded an…
+10/11/2025 10:48:15            232 Informações      NIC 161C3810-292F-40B8-BD81-5C0798A80F6B--073FBF92-4CE5-470A-87F5-C5C8…
+10/11/2025 10:48:15            233 Informações      Operação ' Create ' bem-sucedida na 161C3810-292F-40B8-BD81-5C0798A80F…
+10/11/2025 10:48:15            291 Informações      Descarregamento RSC modificado para NIC 161C3810-292F-40B8-BD81-5C0798…
+10/11/2025 10:48:15             67 Informações      Porta 073FBF92-4CE5-470A-87F5-C5C80747439D (Nome Amigável: 073FBF92-4C…
+10/11/2025 10:48:15            292 Informações      Descarregamento RSC modificado para Porta 073FBF92-4CE5-470A-87F5-C5C8…
+10/11/2025 10:48:15            232 Informações      NIC 790E58B4-7939-4434-9358-89AE7DDBE87F (Friendly Name: WSL (Hyper-V …
+10/11/2025 10:48:14              7 Informações      Miniport NIC 790E58B4-7939-4434-9358-89AE7DDBE87F (Friendly Name: WSL …
+10/11/2025 10:48:14            291 Informações      Descarregamento RSC modificado para NIC 790E58B4-7939-4434-9358-89AE7D…
+10/11/2025 10:48:14            233 Informações      Operação ' Create ' bem-sucedida na 790E58B4-7939-4434-9358-89AE7DDBE8…
+10/11/2025 10:48:14            291 Informações      Descarregamento RSC modificado para NIC 790E58B4-7939-4434-9358-89AE7D…
+10/11/2025 10:48:14            264 Informações      Porta Interna ou Externa 790E58B4-7939-4434-9358-89AE7DDBE87F (Nome Am…
+10/11/2025 10:48:14            292 Informações      Descarregamento RSC modificado para Porta 790E58B4-7939-4434-9358-89AE…
+
+   ProviderName: VfpExt
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:48:14           7036 Informações      O serviço  entrou no estado Filter restart complete.
+10/11/2025 10:48:14           7036 Informações      O serviço  entrou no estado Filter restart start.
+10/11/2025 10:48:14           7036 Informações      O serviço  entrou no estado Filter attach complete.
+10/11/2025 10:48:14           7036 Informações      O serviço  entrou no estado Filter attach start.
+
+   ProviderName: Microsoft-Windows-Hyper-V-VmSwitch
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:48:13              9 Informações      Switch 790E58B4-7939-4434-9358-89AE7DDBE87E (Friendly Name: WSL (Hyper…
+10/11/2025 10:48:13            232 Informações      NIC 790E58B4-7939-4434-9358-89AE7DDBE87E (Friendly Name: WSL (Hyper-V …
+10/11/2025 10:48:13            233 Informações      Operação ' Create ' bem-sucedida na 790E58B4-7939-4434-9358-89AE7DDBE8…
+10/11/2025 10:48:13            291 Informações      Descarregamento RSC modificado para NIC 790E58B4-7939-4434-9358-89AE7D…
+10/11/2025 10:48:13             67 Informações      Porta 790E58B4-7939-4434-9358-89AE7DDBE87E (Nome Amigável: WSL (Hyper-…
+10/11/2025 10:48:13            292 Informações      Descarregamento RSC modificado para Porta 790E58B4-7939-4434-9358-89AE…
+
+   ProviderName: Service Control Manager
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:31:43           7040 Informações      O tipo de inicialização do serviço Serviço de Transferência Inteligent…
+10/11/2025 10:29:37           7040 Informações      O tipo de inicialização do serviço Serviço de Transferência Inteligent…
+
+   ProviderName: Microsoft-Windows-UserModePowerService
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:28:19             12 Informações      O processo C:\Program Files\Acer\Quick Access Service\QAAdminAgent.exe…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:28:18            566 Informações      A sessão do sistema fez a transição de 156 para 158.…
+
+   ProviderName: Microsoft-Windows-UserModePowerService
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:25:22             12 Informações      O processo C:\Program Files\Acer\Quick Access Service\QAAdminAgent.exe…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:24:52            566 Informações      A sessão do sistema fez a transição de 155 para 156.…
+
+   ProviderName: Microsoft-Windows-DNS-Client
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:21:30           1014 Aviso            A resolução de nome para o docs.google.com atingiu o tempo limite depo…
+
+   ProviderName: Netwtw10
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:21:25           6062 Aviso            6062 - Lso was triggered
+
+   ProviderName: Microsoft-Windows-Power-Troubleshooter
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:21:23              1 Informações      O sistema continuou após retornar do modo de suspensão.…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:21:21            566 Informações      A sessão do sistema fez a transição de 153 para 155.…
+
+   ProviderName: BTHUSB
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:21:19             18 Informações      O Windows não pode armazenar códigos de autenticação Bluetooth (chaves…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:21:19            566 Informações      A sessão do sistema fez a transição de 152 para 153.…
+
+   ProviderName: Netwtw10
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:21:18           7021 Informações      7021 - Connection telemetry fields and analysis usage
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:21:18            105 Informações      Alteração de fonte de energia.
+
+   ProviderName: Netwtw10
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:21:17           7025 Informações      7025 - Dump after return from D3 before cmd 
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:21:17            130 Informações      Horários do Firmware S3. SuspendStart: 110127346, SuspendEnd: 110127347
+10/11/2025 10:21:17            131 Informações      Horários do Firmware S3. ResumeCount: 1, FullResume: 775, AverageResum…
+
+   ProviderName: Microsoft-Windows-Kernel-General
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 10:21:17              1 Informações      A hora do sistema foi alterada para ‎2025‎-‎11‎-‎10T13:21:17.500000000…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 09:41:57            107 Informações      O sistema saiu do modo de suspensão.
+10/11/2025 09:41:55             42 Informações      O sistema está entrando em suspensão.…
+
+   ProviderName: Microsoft-Windows-UserModePowerService
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 09:41:54             12 Informações      O processo C:\Program Files\Acer\Quick Access Service\QAAdminAgent.exe…
+
+   ProviderName: Microsoft-Windows-Kernel-General
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 09:41:54              1 Informações      A hora do sistema foi alterada para ‎2025‎-‎11‎-‎10T12:41:54.853610100…
+10/11/2025 09:41:54             24 Informações      As informações de fuso horário foram atualizadas com o motivo de saída…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 09:41:49            566 Informações      A sessão do sistema fez a transição de 151 para 152.…
+
+   ProviderName: Service Control Manager
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 09:34:21           7040 Informações      O tipo de inicialização do serviço Instalador de Módulos do Windows fo…
+10/11/2025 09:34:21           7040 Informações      O tipo de inicialização do serviço Instalador de Módulos do Windows fo…
+10/11/2025 09:34:19           7040 Informações      O tipo de inicialização do serviço Instalador de Módulos do Windows fo…
+10/11/2025 09:34:14           7040 Informações      O tipo de inicialização do serviço Instalador de Módulos do Windows fo…
+10/11/2025 09:26:10           7040 Informações      O tipo de inicialização do serviço Instalador de Módulos do Windows fo…
+10/11/2025 09:16:52           7040 Informações      O tipo de inicialização do serviço Instalador de Módulos do Windows fo…
+
+   ProviderName: Microsoft-Windows-WindowsUpdateClient
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 09:15:34             20 Erro             Falha na Instalação: o Windows não pôde instalar a seguinte atualizaçã…
+10/11/2025 09:15:34             19 Informações      Instalação Bem-sucedida: o Windows instalou com êxito a seguinte atual…
+10/11/2025 09:15:33             43 Informações      Instalação Iniciada: o Windows iniciou a instalação da seguinte atuali…
+10/11/2025 09:15:31             43 Informações      Instalação Iniciada: o Windows iniciou a instalação da seguinte atuali…
+10/11/2025 09:15:29             44 Informações      O Windows Update iniciou o download de uma atualização.
+10/11/2025 09:15:29             44 Informações      O Windows Update iniciou o download de uma atualização.
+10/11/2025 09:12:23             44 Informações      O Windows Update iniciou o download de uma atualização.
+10/11/2025 09:12:15             44 Informações      O Windows Update iniciou o download de uma atualização.
+
+   ProviderName: Microsoft-Windows-DistributedCOM
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 09:11:24          10016 Aviso            As configurações de permissão específico do aplicativo não concedem pe…
+10/11/2025 09:11:24          10016 Aviso            As configurações de permissão específico do aplicativo não concedem pe…
+10/11/2025 09:11:21          10016 Aviso            As configurações de permissão específico do aplicativo não concedem pe…
+10/11/2025 09:11:21          10016 Aviso            As configurações de permissão específico do aplicativo não concedem pe…
+
+   ProviderName: Service Control Manager
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 09:03:09           7040 Informações      O tipo de inicialização do serviço Serviço de Transferência Inteligent…
+10/11/2025 09:01:01           7040 Informações      O tipo de inicialização do serviço Serviço de Transferência Inteligent…
+
+   ProviderName: Microsoft-Windows-WindowsUpdateClient
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 09:00:55             19 Informações      Instalação Bem-sucedida: o Windows instalou com êxito a seguinte atual…
+10/11/2025 09:00:52             20 Erro             Falha na Instalação: o Windows não pôde instalar a seguinte atualizaçã…
+10/11/2025 09:00:52             43 Informações      Instalação Iniciada: o Windows iniciou a instalação da seguinte atuali…
+10/11/2025 09:00:41             44 Informações      O Windows Update iniciou o download de uma atualização.
+10/11/2025 08:59:58             43 Informações      Instalação Iniciada: o Windows iniciou a instalação da seguinte atuali…
+10/11/2025 08:59:55             44 Informações      O Windows Update iniciou o download de uma atualização.
+
+   ProviderName: Microsoft-Windows-Time-Service
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 08:55:28             37 Informações      O provedor de hora NtpClient está recebendo dados de hora válidos de t…
+
+   ProviderName: Microsoft-Windows-DNS-Client
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 08:55:04           1014 Aviso            A resolução de nome para o raw.githubusercontent.com atingiu o tempo l…
+
+   ProviderName: Netwtw10
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 08:54:59           6062 Aviso            6062 - Lso was triggered
+
+   ProviderName: BTHUSB
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 08:54:57             18 Informações      O Windows não pode armazenar códigos de autenticação Bluetooth (chaves…
+
+   ProviderName: Microsoft-Windows-Power-Troubleshooter
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 08:54:57              1 Informações      O sistema continuou após retornar do modo de suspensão.…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 08:54:57            566 Informações      A sessão do sistema fez a transição de 149 para 151.…
+
+   ProviderName: Microsoft-Windows-Time-Service
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 08:54:56            134 Aviso            O NtpClient não conseguiu definir um mesmo nível manual para ser usado…
+
+   ProviderName: Netwtw10
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 08:54:56           7021 Informações      7021 - Connection telemetry fields and analysis usage
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 08:54:56            566 Informações      A sessão do sistema fez a transição de 148 para 149.…
+
+   ProviderName: Microsoft-Windows-Kernel-Boot
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 08:54:56             32 Informações      O bootmgr gastou 0 ms aguardando a entrada do usuário.
+10/11/2025 08:54:56             18 Informações      Há 0x1 opções de inicialização no sistema.
+10/11/2025 08:54:56            247 Informações      Não é possível carregar Pluton-Windows firmware. StatusCode: STATUS_SU…
+10/11/2025 08:54:56             27 Informações      O tipo de inicialização era 0x2.
+10/11/2025 08:54:56             25 Informações      A política do menu de inicialização era 0x0.
+10/11/2025 08:54:56             30 Informações      O firmware relatou métricas de inicialização.
+
+   ProviderName: Netwtw10
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 08:54:56           7025 Informações      7025 - Dump after return from D3 before cmd 
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 08:54:55            105 Informações      Alteração de fonte de energia.
+
+   ProviderName: Microsoft-Windows-Kernel-General
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+10/11/2025 08:54:55              1 Informações      A hora do sistema foi alterada para ‎2025‎-‎11‎-‎10T11:54:55.500000000…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 21:05:45            107 Informações      O sistema saiu do modo de suspensão.
+
+   ProviderName: Netwtw10
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 21:05:38           6062 Aviso            6062 - Lso was triggered
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 21:05:35             42 Informações      O sistema está entrando em suspensão.…
+
+   ProviderName: BTHUSB
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 21:05:34             18 Informações      O Windows não pode armazenar códigos de autenticação Bluetooth (chaves…
+
+   ProviderName: Microsoft-Windows-Power-Troubleshooter
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 21:05:34              1 Informações      O sistema continuou após retornar do modo de suspensão.…
+
+   ProviderName: Netwtw10
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 21:05:33           7021 Informações      7021 - Connection telemetry fields and analysis usage
+09/11/2025 21:05:32           7025 Informações      7025 - Dump after return from D3 before cmd 
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 21:05:32            130 Informações      Horários do Firmware S3. SuspendStart: 107306801, SuspendEnd: 107306803
+09/11/2025 21:05:32            131 Informações      Horários do Firmware S3. ResumeCount: 1, FullResume: 804, AverageResum…
+
+   ProviderName: Microsoft-Windows-Kernel-General
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 21:05:32              1 Informações      A hora do sistema foi alterada para ‎2025‎-‎11‎-‎10T00:05:32.500000000…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 18:05:33            107 Informações      O sistema saiu do modo de suspensão.
+09/11/2025 18:05:31             42 Informações      O sistema está entrando em suspensão.…
+
+   ProviderName: Microsoft-Windows-UserModePowerService
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 18:05:30             12 Informações      O processo C:\Program Files\Acer\Quick Access Service\QAAdminAgent.exe…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 18:05:24            566 Informações      A sessão do sistema fez a transição de 147 para 148.…
+
+   ProviderName: Microsoft-Windows-UserModePowerService
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 17:58:07             12 Informações      O processo C:\Program Files\Acer\Quick Access Service\QAAdminAgent.exe…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 17:58:07            566 Informações      A sessão do sistema fez a transição de 145 para 147.…
+
+   ProviderName: Microsoft-Windows-UserModePowerService
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 17:55:14             12 Informações      O processo C:\Program Files\Acer\Quick Access Service\QAAdminAgent.exe…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 17:54:44            566 Informações      A sessão do sistema fez a transição de 144 para 145.…
+
+   ProviderName: Microsoft-Windows-Kernel-General
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 17:47:17             16 Informações      O histórico de acesso no hive \??\C:\ProgramData\Packages\Microsoft.Yo…
+09/11/2025 17:47:17             16 Informações      O histórico de acesso no hive \??\C:\Users\joxto\AppData\Local\Package…
+09/11/2025 17:47:16             16 Informações      O histórico de acesso no hive \??\C:\Users\joxto\AppData\Local\Package…
+
+   ProviderName: Microsoft-Windows-DNS-Client
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 17:43:05           1014 Aviso            A resolução de nome para o github.com atingiu o tempo limite depois qu…
+09/11/2025 17:35:41           1014 Aviso            A resolução de nome para o www.primevideo.com atingiu o tempo limite d…
+
+   ProviderName: Microsoft-Windows-UserModePowerService
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 17:21:25             12 Informações      O processo C:\Program Files\Acer\Quick Access Service\QAAdminAgent.exe…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 17:21:25            566 Informações      A sessão do sistema fez a transição de 142 para 144.…
+
+   ProviderName: Service Control Manager
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 17:20:05           7040 Informações      O tipo de inicialização do serviço Serviço de Transferência Inteligent…
+
+   ProviderName: Microsoft-Windows-UserModePowerService
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 17:18:30             12 Informações      O processo C:\Program Files\Acer\Quick Access Service\QAAdminAgent.exe…
+
+   ProviderName: Service Control Manager
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 17:18:00           7040 Informações      O tipo de inicialização do serviço Serviço de Transferência Inteligent…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 17:18:00            566 Informações      A sessão do sistema fez a transição de 141 para 142.…
+
+   ProviderName: Microsoft-Windows-WindowsUpdateClient
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:45:12             20 Erro             Falha na Instalação: o Windows não pôde instalar a seguinte atualizaçã…
+09/11/2025 16:45:12             19 Informações      Instalação Bem-sucedida: o Windows instalou com êxito a seguinte atual…
+09/11/2025 16:45:11             19 Informações      Instalação Bem-sucedida: o Windows instalou com êxito a seguinte atual…
+
+   ProviderName: Microsoft-Windows-Kernel-General
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:45:04             16 Informações      O histórico de acesso no hive \??\C:\Users\joxto\AppData\Local\Package…
+09/11/2025 16:45:04             16 Informações      O histórico de acesso no hive \??\C:\Users\joxto\AppData\Local\Package…
+
+   ProviderName: Microsoft-Windows-UserModePowerService
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:43:56             12 Informações      O processo C:\Program Files\Acer\Quick Access Service\QAAdminAgent.exe…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:43:56            566 Informações      A sessão do sistema fez a transição de 139 para 141.…
+
+   ProviderName: Microsoft-Windows-UserModePowerService
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:43:32             12 Informações      O processo C:\Program Files\Acer\Quick Access Service\QAAdminAgent.exe…
+
+   ProviderName: Microsoft-Windows-WindowsUpdateClient
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:43:28             43 Informações      Instalação Iniciada: o Windows iniciou a instalação da seguinte atuali…
+09/11/2025 16:43:27             43 Informações      Instalação Iniciada: o Windows iniciou a instalação da seguinte atuali…
+09/11/2025 16:43:27             43 Informações      Instalação Iniciada: o Windows iniciou a instalação da seguinte atuali…
+09/11/2025 16:43:25             44 Informações      O Windows Update iniciou o download de uma atualização.
+09/11/2025 16:43:25             44 Informações      O Windows Update iniciou o download de uma atualização.
+09/11/2025 16:43:25             44 Informações      O Windows Update iniciou o download de uma atualização.
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:43:01            566 Informações      A sessão do sistema fez a transição de 138 para 139.…
+
+   ProviderName: Microsoft-Windows-Kernel-General
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:42:25              1 Informações      A hora do sistema foi alterada para ‎2025‎-‎11‎-‎09T19:42:25.380057100…
+09/11/2025 16:42:25             24 Informações      As informações de fuso horário foram atualizadas com o motivo de saída…
+09/11/2025 16:42:25              1 Informações      A hora do sistema foi alterada para ‎2025‎-‎11‎-‎09T19:42:25.378656800…
+09/11/2025 16:42:25             24 Informações      As informações de fuso horário foram atualizadas com o motivo de saída…
+
+   ProviderName: Microsoft-Windows-Time-Service
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:42:25             37 Informações      O provedor de hora NtpClient está recebendo dados de hora válidos de t…
+
+   ProviderName: Microsoft-Windows-DNS-Client
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:42:15           1014 Aviso            A resolução de nome para o accounts.google.com atingiu o tempo limite …
+
+   ProviderName: Microsoft-Windows-TPM-WMI
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:42:08           1038 Informações      As verificações de integridade de pré-atestado confirmam que o disposi…
+09/11/2025 16:42:08           1041 Informações      Informações detalhadas da verificação de integridade anterior ao atest…
+
+   ProviderName: Netwtw10
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:42:05           6062 Aviso            6062 - Lso was triggered
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:42:04            566 Informações      A sessão do sistema fez a transição de 136 para 138.…
+
+   ProviderName: Microsoft-Windows-Power-Troubleshooter
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:42:04              1 Informações      O sistema continuou após retornar do modo de suspensão.…
+
+   ProviderName: Microsoft-Windows-Time-Service
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:42:03            134 Aviso            O NtpClient não conseguiu definir um mesmo nível manual para ser usado…
+
+   ProviderName: BTHUSB
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:42:02             18 Informações      O Windows não pode armazenar códigos de autenticação Bluetooth (chaves…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:42:01            566 Informações      A sessão do sistema fez a transição de 135 para 136.…
+
+   ProviderName: Microsoft-Windows-Kernel-Boot
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:42:01             32 Informações      O bootmgr gastou 0 ms aguardando a entrada do usuário.
+09/11/2025 16:42:01             18 Informações      Há 0x1 opções de inicialização no sistema.
+09/11/2025 16:42:01            247 Informações      Não é possível carregar Pluton-Windows firmware. StatusCode: STATUS_SU…
+09/11/2025 16:42:01             27 Informações      O tipo de inicialização era 0x2.
+09/11/2025 16:42:01             25 Informações      A política do menu de inicialização era 0x0.
+09/11/2025 16:42:01             30 Informações      O firmware relatou métricas de inicialização.
+
+   ProviderName: Netwtw10
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:42:00           7021 Informações      7021 - Connection telemetry fields and analysis usage
+09/11/2025 16:42:00           7025 Informações      7025 - Dump after return from D3 before cmd 
+
+   ProviderName: Microsoft-Windows-Kernel-General
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 16:41:59              1 Informações      A hora do sistema foi alterada para ‎2025‎-‎11‎-‎09T19:41:59.500000000…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 14:09:31            107 Informações      O sistema saiu do modo de suspensão.
+
+   ProviderName: Microsoft-Windows-DNS-Client
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 14:09:21           1014 Aviso            A resolução de nome para o accounts.google.com atingiu o tempo limite …
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 14:09:20             42 Informações      O sistema está entrando em suspensão.…
+
+   ProviderName: Netwtw10
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 14:09:17           6062 Aviso            6062 - Lso was triggered
+
+   ProviderName: Microsoft-Windows-Power-Troubleshooter
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 14:09:16              1 Informações      O sistema continuou após retornar do modo de suspensão.…
+
+   ProviderName: BTHUSB
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 14:09:13             18 Informações      O Windows não pode armazenar códigos de autenticação Bluetooth (chaves…
+
+   ProviderName: Netwtw10
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 14:09:11           7021 Informações      7021 - Connection telemetry fields and analysis usage
+09/11/2025 14:09:11           7025 Informações      7025 - Dump after return from D3 before cmd 
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 14:09:10            130 Informações      Horários do Firmware S3. SuspendStart: 102236016, SuspendEnd: 102236019
+09/11/2025 14:09:10            131 Informações      Horários do Firmware S3. ResumeCount: 4, FullResume: 783, AverageResum…
+
+   ProviderName: Microsoft-Windows-Kernel-General
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 14:09:10              1 Informações      A hora do sistema foi alterada para ‎2025‎-‎11‎-‎09T17:09:10.500000000…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 11:09:11            107 Informações      O sistema saiu do modo de suspensão.
+
+   ProviderName: EventLog
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 14:09:11           6013 Informações      O tempo de ativação do sistema é 850030 segundos.
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 11:09:08             42 Informações      O sistema está entrando em suspensão.…
+
+   ProviderName: Microsoft-Windows-UserModePowerService
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 11:09:08             12 Informações      O processo C:\Program Files\Acer\Quick Access Service\QAAdminAgent.exe…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 11:09:01            566 Informações      A sessão do sistema fez a transição de 134 para 135.…
+
+   ProviderName: Microsoft-Windows-DNS-Client
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 10:50:14           1014 Aviso            A resolução de nome para o waa-pa.clients6.google.com atingiu o tempo …
+09/11/2025 10:50:13           1014 Aviso            A resolução de nome para o auth.split.io atingiu o tempo limite depois…
+
+   ProviderName: Netwtw10
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 10:50:10           6062 Aviso            6062 - Lso was triggered
+
+   ProviderName: Microsoft-Windows-Power-Troubleshooter
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 10:50:06              1 Informações      O sistema continuou após retornar do modo de suspensão.…
+
+   ProviderName: BTHUSB
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 10:50:06             18 Informações      O Windows não pode armazenar códigos de autenticação Bluetooth (chaves…
+
+   ProviderName: Netwtw10
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 10:50:06           7021 Informações      7021 - Connection telemetry fields and analysis usage
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 10:50:05            566 Informações      A sessão do sistema fez a transição de 132 para 134.…
+09/11/2025 10:50:05            566 Informações      A sessão do sistema fez a transição de 131 para 132.…
+
+   ProviderName: Netwtw10
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 10:50:04           7025 Informações      7025 - Dump after return from D3 before cmd 
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 10:50:04            130 Informações      Horários do Firmware S3. SuspendStart: 101089679, SuspendEnd: 101089681
+09/11/2025 10:50:04            131 Informações      Horários do Firmware S3. ResumeCount: 3, FullResume: 787, AverageResum…
+
+   ProviderName: Microsoft-Windows-Kernel-General
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 10:50:04              1 Informações      A hora do sistema foi alterada para ‎2025‎-‎11‎-‎09T13:50:04.500000000…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 10:39:30            107 Informações      O sistema saiu do modo de suspensão.
+09/11/2025 10:39:28             42 Informações      O sistema está entrando em suspensão.…
+
+   ProviderName: Microsoft-Windows-UserModePowerService
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 10:39:28             12 Informações      O processo C:\Program Files\Acer\Quick Access Service\QAAdminAgent.exe…
+
+   ProviderName: Microsoft-Windows-Kernel-Power
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 10:39:21            105 Informações      Alteração de fonte de energia.
+09/11/2025 10:39:20            566 Informações      A sessão do sistema fez a transição de 130 para 131.…
+
+   ProviderName: Service Control Manager
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 10:31:36           7040 Informações      O tipo de inicialização do serviço Serviço de Transferência Inteligent…
+09/11/2025 10:29:30           7040 Informações      O tipo de inicialização do serviço Serviço de Transferência Inteligent…
+
+   ProviderName: Microsoft-Windows-DNS-Client
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+09/11/2025 10:12:40           1014 Aviso            A resolução de nome para o ssl.gstatic.com atingiu o tempo limite depo…
+09/11/2025 09:42:47           1014 Aviso            A resolução de nome para o waa-pa.clients6.google.com atingiu o tempo …
+

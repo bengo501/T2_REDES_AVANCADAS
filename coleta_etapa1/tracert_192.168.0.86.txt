@@ -1,0 +1,13 @@
+
+Rastreando a rota para MAC-1C9ECE [192.168.0.86]
+com no m ximo 30 saltos:
+
+  1     *        *        *     Esgotado o tempo limite do pedido.
+  2     *        *        *     Esgotado o tempo limite do pedido.
+  3     *        *        *     Esgotado o tempo limite do pedido.
+  4     *        *        *     Esgotado o tempo limite do pedido.
+  5     *        *        *     Esgotado o tempo limite do pedido.
+  6     *        *        *     Esgotado o tempo limite do pedido.
+  7     *        *        *     Esgotado o tempo limite do pedido.
+  8     *        *        *     Esgotado o tempo limite do pedido.
+  9     *        *     

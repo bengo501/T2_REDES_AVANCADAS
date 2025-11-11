@@ -1,0 +1,22 @@
+$ dig 192.168.0.15 mx
+
+; <<>> DiG 9.18.30-0ubuntu0.20.04.2-Ubuntu <<>> 192.168.0.15 mx
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 4261
+;; flags: qr rd; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1400
+;; QUESTION SECTION:
+;192.168.0.15.			IN	MX
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	a.root-servers.net. nstld.verisign-grs.com. 2025111002 1800 900 604800 86400
+
+;; Query time: 169 msec
+;; SERVER: 172.29.240.1#53(172.29.240.1) (UDP)
+;; WHEN: Mon Nov 10 20:13:26 -03 2025
+;; MSG SIZE  rcvd: 116
+

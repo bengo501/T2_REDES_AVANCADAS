@@ -1,0 +1,2 @@
+$ whois 181.213.132.4
+comando 'whois' não encontrado

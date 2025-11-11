@@ -1,0 +1,6 @@
+$ nslookup alvo.externo
+Server:		172.29.240.1
+Address:	172.29.240.1#53
+
+** server can't find alvo.externo: NXDOMAIN
+

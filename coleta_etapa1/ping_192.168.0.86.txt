@@ -1,0 +1,12 @@
+
+Disparando 192.168.0.86 com 32 bytes de dados:
+Esgotado o tempo limite do pedido.
+Esgotado o tempo limite do pedido.
+Esgotado o tempo limite do pedido.
+Esgotado o tempo limite do pedido.
+Esgotado o tempo limite do pedido.
+Esgotado o tempo limite do pedido.
+
+Estat¡sticas do Ping para 192.168.0.86:
+    Pacotes: Enviados = 6, Recebidos = 0, Perdidos = 6 (100% de
+             perda),

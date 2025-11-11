@@ -1,0 +1,19 @@
+
+Interface: 192.168.0.15 --- 0x6
+  Endere‡o IP           Endere‡o f¡sico       Tipo
+  192.168.0.1           e8-20-e2-cb-5f-ea     dinƒmico  
+  192.168.0.83          5a-74-bc-a6-5a-39     dinƒmico  
+  192.168.0.255         ff-ff-ff-ff-ff-ff     est tico  
+  224.0.0.22            01-00-5e-00-00-16     est tico  
+  224.0.0.251           01-00-5e-00-00-fb     est tico  
+  224.0.0.252           01-00-5e-00-00-fc     est tico  
+  239.255.255.250       01-00-5e-7f-ff-fa     est tico  
+  255.255.255.255       ff-ff-ff-ff-ff-ff     est tico  
+
+Interface: 172.29.240.1 --- 0x3a
+  Endere‡o IP           Endere‡o f¡sico       Tipo
+  172.29.240.200        00-15-5d-09-79-78     dinƒmico  
+  172.29.255.255        ff-ff-ff-ff-ff-ff     est tico  
+  224.0.0.22            01-00-5e-00-00-16     est tico  
+  224.0.0.251           01-00-5e-00-00-fb     est tico  
+  239.255.255.250       01-00-5e-7f-ff-fa     est tico  

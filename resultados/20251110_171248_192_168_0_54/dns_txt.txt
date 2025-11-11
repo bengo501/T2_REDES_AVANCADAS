@@ -1,0 +1,22 @@
+$ dig 192.168.0.54 txt
+
+; <<>> DiG 9.18.30-0ubuntu0.20.04.2-Ubuntu <<>> 192.168.0.54 txt
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 8259
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1220
+; COOKIE: a0693a24eec26c389c2a0f7d6912473c2e9b730c030164af (good)
+;; QUESTION SECTION:
+;192.168.0.54.			IN	TXT
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	a.root-servers.net. nstld.verisign-grs.com. 2025111001 1800 900 604800 86400
+
+;; Query time: 10 msec
+;; SERVER: 172.29.240.1#53(172.29.240.1) (UDP)
+;; WHEN: Mon Nov 10 17:12:49 -03 2025
+;; MSG SIZE  rcvd: 144
+

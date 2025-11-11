@@ -1,0 +1,7 @@
+$ nslookup 192.168.0.54
+;; Got recursion not available from 172.29.240.1
+54.0.168.192.in-addr.arpa	name = FSOS-7MPI809MCP.local.
+54.0.168.192.in-addr.arpa	rdata_47 = 54.0.168.192.in-addr.arpa. PTR
+
+Authoritative answers can be found from:
+

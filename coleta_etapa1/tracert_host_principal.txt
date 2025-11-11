@@ -1,0 +1,7 @@
+
+Rastreando a rota para Bengo [192.168.0.15]
+com no m ximo 30 saltos:
+
+  1    <1 ms    <1 ms    <1 ms  Bengo [192.168.0.15] 
+
+Rastreamento conclu¡do.

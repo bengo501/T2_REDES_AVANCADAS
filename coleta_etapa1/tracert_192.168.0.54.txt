@@ -1,0 +1,35 @@
+
+Rastreando a rota para 192.168.0.54 com no m ximo 30 saltos
+
+  1     *        *        *     Esgotado o tempo limite do pedido.
+  2     *        *        *     Esgotado o tempo limite do pedido.
+  3     *        *        *     Esgotado o tempo limite do pedido.
+  4     *        *        *     Esgotado o tempo limite do pedido.
+  5     *        *        *     Esgotado o tempo limite do pedido.
+  6     *        *        *     Esgotado o tempo limite do pedido.
+  7     *        *        *     Esgotado o tempo limite do pedido.
+  8     *        *        *     Esgotado o tempo limite do pedido.
+  9     *        *        *     Esgotado o tempo limite do pedido.
+ 10     *        *        *     Esgotado o tempo limite do pedido.
+ 11     *        *        *     Esgotado o tempo limite do pedido.
+ 12     *        *        *     Esgotado o tempo limite do pedido.
+ 13     *        *        *     Esgotado o tempo limite do pedido.
+ 14     *        *        *     Esgotado o tempo limite do pedido.
+ 15     *        *        *     Esgotado o tempo limite do pedido.
+ 16     *        *        *     Esgotado o tempo limite do pedido.
+ 17     *        *        *     Esgotado o tempo limite do pedido.
+ 18     *        *        *     Esgotado o tempo limite do pedido.
+ 19     *        *        *     Esgotado o tempo limite do pedido.
+ 20     *        *        *     Esgotado o tempo limite do pedido.
+ 21     *        *        *     Esgotado o tempo limite do pedido.
+ 22     *        *        *     Esgotado o tempo limite do pedido.
+ 23     *        *        *     Esgotado o tempo limite do pedido.
+ 24     *        *        *     Esgotado o tempo limite do pedido.
+ 25     *        *        *     Esgotado o tempo limite do pedido.
+ 26     *        *        *     Esgotado o tempo limite do pedido.
+ 27     *        *        *     Esgotado o tempo limite do pedido.
+ 28     *        *        *     Esgotado o tempo limite do pedido.
+ 29     *        *        *     Esgotado o tempo limite do pedido.
+ 30     *        *        *     Esgotado o tempo limite do pedido.
+
+Rastreamento conclu¡do.

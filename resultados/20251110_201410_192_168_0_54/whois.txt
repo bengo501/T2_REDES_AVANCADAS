@@ -1,0 +1,2 @@
+$ whois 192.168.0.54
+comando 'whois' não encontrado
