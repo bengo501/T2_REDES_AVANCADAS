@@ -2,3 +2,7 @@
 Nmap scan report for 192.168.0.86
 Host is up.
 # Nmap done at Tue Nov 11 09:44:17 2025 -- 1 IP address (1 host up) scanned in 1.58 seconds
+
+
+
+

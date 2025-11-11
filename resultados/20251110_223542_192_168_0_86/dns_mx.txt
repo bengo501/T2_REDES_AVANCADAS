@@ -1,4 +1,7 @@
+
+
 $ dig 192.168.0.86 mx
+
 
 ; <<>> DiG 9.18.30-0ubuntu0.20.04.2-Ubuntu <<>> 192.168.0.86 mx
 ;; global options: +cmd
