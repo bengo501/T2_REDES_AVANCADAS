@@ -1,0 +1,8 @@
+# Nmap 7.80 scan initiated Tue Nov 11 00:14:16 2025 as: nmap -sS -sV -O -Pn -T4 -p- -oN /mnt/c/Users/joxto/Downloads/T2_REDES_AVANCADAS/resultados/etapa2/192.168.0.86/tcp_full.txt 192.168.0.86
+Nmap scan report for 192.168.0.86
+Host is up (0.011s latency).
+All 65535 scanned ports on 192.168.0.86 are filtered
+Too many fingerprints match this host to give specific OS details
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov 11 00:17:29 2025 -- 1 IP address (1 host up) scanned in 192.97 seconds

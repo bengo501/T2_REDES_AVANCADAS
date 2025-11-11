@@ -1,234 +1,185 @@
-# Relatório de análise de vulnerabilidades
+    Relatório de Análise de Vulnerabilidades
 
-**disciplina:** redes de computadores avançadas
-**universidade:** pontifícia universidade católica do rio grande do sul
-**escola politécnica**
-**data:** [preencher]
-**grupo:** Bernardo Klein Heitz
+    Trabalho 2 - Redes de computadores avançadas
 
-    João Pedro Aiolfi
+**Grupo:**
 
-    Lucas Lantmann
+* Bernardo Heitz
+* João Pedro Aiolfi
+* Lucas Lantmann
+* Lucas Brenner
 
-## 1. introdução
+## 1. Introdução
 
-### 1.1 alvo escolhido e escopo
+### 1.1 Alvo escolhido e escopo
 
-#### alvo 1
+#### Alvo 1
 
-- **nome/identificação:** desktop bengo (windows 11 + wsl2)
-- **endereço ip:** 192.168.0.15 (wi-fi) e 172.29.240.1 (interface vethernet do wsl)
-- **domínio (se aplicável):** não aplicável
-- **escopo do teste:**
-  - **dentro do escopo:**
-    - inventário de interfaces, serviços em escuta e logs locais do windows
-    - conectividade com o roteador doméstico 192.168.0.1 e com os vizinhos identificados em 192.168.0.0/24
-  - **fora do escopo:**
-    - dispositivos de terceiros conectados à mesma rede sem autorização
-    - serviços externos acessados via https durante o uso normal do desktop
+**Identificação:** notebook macos presente na rede doméstica
 
-#### alvo 2
+- **Endereço ip:** 192.168.0.86
+- **Domínio:** não aplicável
+- **Escopo do teste:**
+  - **Dentro do escopo:**
+    - identificação remota do host via consultas icmp/dns a partir da estação de análise
+    - verificação de rota e registros públicos associados ao ip privado
+  - **Fora do escopo:**
+    - acesso direto ao sistema operacional macos ou coleta local de serviços
+    - qualquer tentativa de autenticação ou exploração ativa
 
-- **nome/identificação:** resolvedor dns residencial configurado no roteador (serviços 181.213.132.4 e 181.213.132.5)
-- **endereço ip:** 181.213.132.4 e 181.213.132.5
-- **domínio (se aplicável):** não aplicável
-- **escopo do teste:**
-  - **dentro do escopo:**
-    - consultas whois/dig/nslookup realizadas via wsl
-    - medições de latência e rota (ping, tracepath) a partir da rede doméstica
-  - **fora do escopo:**
-    - alterações de configuração no roteador ou no provedor
-    - tráfego malicioso ou de carga contra hops intermediários
+#### Alvo 2
 
-### 1.2 justificativa da escolha
+- **Identificação:** dispositivo residente na rede doméstica (ip 192.168.0.54)
+- **Endereço ip:** 192.168.0.54
+- **Domínio:** não aplicável
+- **Escopo do teste:**
+  - **Dentro do escopo:**
+    - testes icmp, consultas dns e verificação de disponibilidade realizados via wsl
+    - observação da resposta do roteador intermediário e de eventuais filtros locais
+  - **Fora do escopo:**
+    - alterações no firmware do equipamento ou uso de credenciais do proprietário
+    - geração de tráfego excessivo (flood) que possa comprometer a rede doméstica
 
-os dois alvos pertencem integralmente ao grupo e podem ser avaliados sem risco jurídico. o desktop bengo concentra as ferramentas de desenvolvimento e permanece ligado durante a disciplina, permitindo observar portas em escuta (netstat) e a interação com a wsl. já os resolvedores dns 181.213.132.4/5 são os servidores utilizados por toda a rede net 702 5g; analisá-los ajuda a compreender dependências externas antes de partir para testes mais intrusivos. a combinação entrega contraste entre um host de usuário final e um serviço de infraestrutura crítica da mesma rede doméstica.
+### 1.2 Justificativa da escolha
 
-## 2. Etapa 1 
+    Ambos os alvos estão sob controle do grupo e localizam-se na mesma rede doméstica, o que facilita repetir medições com segurança. o notebook macos (192.168.0.86) apresenta comportamento diferenciado (bloqueio de icmp), fornecendo um caso real de host protegido. o outro dispositivo em 192.168.0.54 permanece ativo e responde a pings, servindo como contraste para avaliar como esses equipamentos lidam com tráfego básico.
+
+## 2. Etapa 1
 
 ## Obtenção de informações
 
-### 2.1 métodos e ferramentas utilizadas
+### 2.1 Métodos e ferramentas utilizadas
 
-- **ferramentas:**
-  - `scripts/etapa1/coleta_informacoes.sh` – automatizou consultas whois/dig/nslookup, ping e tracepath para cada ip-alvo, salvando tudo em `resultados/<timestamp>_<alvo>/`
-  - `ipconfig`, `get-netipconfiguration` e `arp -a` (powershell) – inventário de interfaces, dns configurados e vizinhos na sub-rede
-  - `netstat -ano` e `Get-NetTCPConnection` – levantamento das portas tcp/udp em escuta e processos associados no desktop
-  - `ping`, `tracert` (windows) e `tracepath` (wsl) – medições de latência, perda e hops para hosts internos e externos
-  - `dig`, `nslookup` (wsl) – confirmação de respostas dos servidores dns e captura de registros a, ns, mx e txt
-- **técnicas:**
-  - coleta passiva de configuração local antes de qualquer varredura ativa
-  - mapeamento de vizinhança via arp e testes icmp controlados para hosts 192.168.0.54 e 192.168.0.86
-  - análise de serviços expostos sem autenticação através de estatísticas de sockets (netstat) e correlação com pids conhecidos
-  - correlação dos dados de rota/latência com o cenário visível no tracepath para entender o caminho até os resolvedores dns
+- **Ferramentas:** levantamento manual dos parâmetros de rede com `ipconfig`, `get-netipconfiguration` e `arp -a` (powershell) para mapear interfaces e vizinhos; uso de `ping`/`tracert` (powershell) e `traceroute`/`tracepath` (wsl) medindo latências e rotas; consultas `nslookup`, `whois` e `dig` (wsl) para validar registros dns e confirmar o bloco rfc 1918.
+- **Técnicas:**
+  - coleta passiva dos dados de configuração local antes de qualquer varredura ativa, assegurando visão inicial sem gerar ruído.
+  - mapeamento de vizinhança via `arp -a` e testes icmp controlados para os hosts 192.168.0.54 e 192.168.0.86, identificando quem responde dentro da sub-rede.
+  - análise de serviços expostos sem autenticação através de `netstat` e correlação com processos conhecidos, revelando portas em uso.
+  - correlação das rotas e latências observadas no tracepath para entender o caminho até os resolvedores dns e eventuais gargalos.
 
-### 2.2 resultados
+### 2.2 Resultados
 
-#### alvo 1
+#### Alvo 1
 
-- `ipconfig.txt` registrou a interface wi-fi intel ax201 com ipv4 192.168.0.15/24, gateway 192.168.0.1, dns 181.213.132.4/5 e ipv6 globais 2804:14d:4cd6:b384::/64; a interface vethernet do wsl permanece em 172.29.240.1/20.
-- nova execução do script (`resultados/20251110_223041_192_168_0_15/`) mostrou `ping -c 6` respondendo com média 1,60 ms (ttl 127) e `traceroute` com dois saltos (172.29.240.1 → 192.168.0.15), confirmando comunicação íntegra entre wsl e windows.
-- `netstat_ano.txt` e `net_tcp_connections.txt` continuam evidenciando serviços expostos: tcp 135, 445, 5040, 5800-5900, 808, 3000, 6463, 58185 e udp 53, 123, 500/4500, 5353/5355. estes serão priorizados na etapa 2.
-- `arp_hosts.txt` mantém os vizinhos 192.168.0.54 (10-68-38-d1-9a-0b) e 192.168.0.86 (72-89-76-8b-5d-44). o host .54 respondeu ao `ping` com média 16,6 ms (pico inicial 78 ms) e `traceroute` limitado pelo firewall após o primeiro salto; o host .86 continua bloqueando icmp (100 % de perda) e não retorna hops além do gateway do wsl.
-- consultas adicionais (`ping`/`traceroute`) confirmaram latência de um dígito até o roteador 192.168.0.1 e caminho consistente antes de sair para a internet.
-- os relatórios WHOIS dos ips privados agora foram capturados com sucesso, reforçando que pertencem ao bloco RFC 1918 e exigem análise apenas dentro da rede local.
+- `ipconfig.txt` e `arp_hosts.txt` apontaram o macbook (mac 72-89-76-8b-5d-44) em 192.168.0.86 como alvo remoto. os resultados registram  `ping -c 6` com 100 % de perda e `traceroute` limitado ao gateway wsl (172.29.240.1), indicando que o host bloqueia icmp a partir da rede.
+- `dns_a.txt`, `dns_ns.txt`, `dns_mx.txt` e `dns_txt.txt` retornaram apenas o próprio ip e informaram ausência de recursão, comportamento esperado para endereços privados. `nslookup.txt` e `whois.txt` reforçam que o bloco pertence ao rfc 1918 e não possui dados públicos específicos.
+- o comportamento de bloqueio será útil na etapa 2 para validar como o host responde (ou não) a varreduras tcp/udp, exigindo abordagens passivas ou portas específicas.
 
 #### alvo 2
 
-- `resultados/20251110_223856_181_213_132_4/` registrou `ping` estável (média 11,8 ms, 0 % perda) e `traceroute` evidenciando o caminho 172.29.240.1 → 192.168.0.1 → 10.15.0.1 → 201.21.210.117 → 201.21.192.200, seguido de filtros nos roteadores do provedor.
-- `resultados/20251110_224140_181_213_132_5/` mostrou comportamento semelhante, porém com maior variação (média 53,7 ms devido a dois picos acima de 120 ms) e traceroute quase idêntico até o backbone da claro.
-- `dns_a.txt`, `dns_ns.txt`, `dns_mx.txt` e `dns_txt.txt` retornaram o próprio endereço sem registros auxiliares e sinalizaram “recursion requested but not available”, confirmando operação com recursão desabilitada.
-- `nslookup.txt` reforçou a resolução direta e sem aliases; `whois.txt` agora traz os detalhes completos do bloco 181.213.0.0/16 (Claro NXT / AS28573), com contatos de abuso `virtua@virtua.com.br`.
-- os testes validam que toda a rede net 702 5g depende exclusivamente desses resolvedores; qualquer indisponibilidade pode introduzir latência (como visto nos picos do ip .5) ou perda de resolução para o desktop alvo.
+- os resultados mostraram `ping -c 6` com média 16,6 ms (pico inicial 78 ms) e 0 % de perda, enquanto o `traceroute` retorna apenas o salto 172.29.240.1 e passa a responder com `*`, sinalizando firewall após o gateway interno.
+- `dns_a.txt`, `dns_ns.txt`, `dns_mx.txt` e `dns_txt.txt` repetem o ip como resposta direta e alertam sobre recursão indisponível; `nslookup.txt` e `whois.txt` confirmam que o endereço faz parte do bloco privado rfc 1918, sem dados específicos do fabricante.
+- o dispositivo responde a icmp, o que abre caminho para medir disponibilidade ao longo do tempo e, na etapa 2, observar como portas tcp/udp se comportam (se houver). a diferença de comportamento em relação ao macOS (.86) fornece um caso comparativo para a análise de vulnerabilidades.
 
 ## 3. Etapa 2
 
 ## Mapeamento da rede e identificação de serviços e vulnerabilidades
 
-### 3.1 tipos de varreduras e ferramentas utilizadas
+### 3.1 Tipos de varreduras e ferramentas utilizadas
 
-[descrever os tipos de varreduras realizadas e as ferramentas usadas. exemplo:]
+- **Host discovery:** `sudo nmap -sn -n 192.168.0.54` e `sudo nmap -sn -Pn 192.168.0.86` (registrados em `resultados/etapa2/<ip>/host_discovery.txt`) para confirmar disponibilidade dos alvos mesmo com block de icmp.
+- **Varredura tcp completa:** `sudo nmap -sS -sV -O -T4 -p- <ip>`; para o macOS (`192.168.0.86`) usamos `-Pn` a fim de ignorar ausência de ping. saídas em `tcp_full.txt`.
+- **Varredura udp prioritária:** `sudo nmap -sU --top-ports 20 -sV <ip>` (com `-Pn` no macOS), salvando em `udp_top20.txt` para identificar serviços em udp comuns.
+- **Análise de banners:** inspeção manual dos retornos http/vnc capturados pelo nmap (por exemplo, respostas plex em 32400/tcp) para inferir aplicações específicas.
 
-- **varredura de portas:**
-  - ferramenta: [nome]
-  - técnica: [tcp/udp scan, stealth scan, etc.]
-- **identificação de serviços:**
-  - ferramenta: [nome]
-- **detecção de versões:**
-  - ferramenta: [nome]
-- **varredura de vulnerabilidades:**
-  - ferramenta: [nome]
+### 3.2 Resultados e descobertas
 
-### 3.2 resultados e descobertas
+#### Alvo 1 — 192.168.0.86 (macos)
 
-#### alvo 1
+- **Detecção:** `nmap -sn -Pn` confirmou host ativo mesmo sem responder icmp tradicional.
+- **Superfície tcp:** todas as 65 535 portas apareceram como `filtered`, indicando firewall bloqueando tentativas (provavelmente a proteção padrão do macOS). nenhum banner foi obtido.
+- **Superfície udp:** a maioria das portas também retornou `filtered` ou `open|filtered`; destaques para 53/udp S(resolver local), 137-138/udp (netbios), 1900/udp (upnp) e 500/udp (isakmp) marcadas como `open|filtered`. não foi possível validar diagnóstico sem acesso adicional.
+- **Implicações:** o host está fortemente protegido; a etapa 3 deverá avaliar se é necessário manter ou ajustar o firewall e se os serviços udp listados devem ser desabilitados quando não utilizados.
+- **Vulnerabilidades identificadas:** nenhuma vulnerabilidade confirmada neste estágio; manter o firewall ativo e monitorar os serviços udp listados.
 
-**serviços em execução:**
+#### Alvo 2 — 192.168.0.54
 
-| porta   | protocolo | serviço | versão   | estado           |
-| ------- | --------- | -------- | --------- | ---------------- |
-| [porta] | [tcp/udp] | [nome]   | [versão] | [aberta/fechada] |
-| ...     | ...       | ...      | ...       | ...              |
+- **Detecção:** `nmap -sn` retornou latência média 18 ms e confirmou host ativo.
+- **Superfície tcp (arquivo `tcp_full.txt`):**
 
-**sistemas operacionais detectados:**
+| porta              | serviço detectado         | observações                                                                                 |
+| ------------------ | -------------------------- | --------------------------------------------------------------------------------------------- |
+| 5800/tcp           | `vnc-http` TightVNC      | banner revela usuário `fsos-7mpi809mcp`; versão específica não divulgada.               |
+| 5900/tcp           | `vnc` protocolo 3.8      | acesso remoto direto; versão não informada pelo serviço.                                   |
+| 7680/tcp           | `pando-pub?`             | possivelmente serviço de atualização windows (delivery optimization).                      |
+| 8000/tcp, 9000/tcp | `Golang net/http server` | aponta para APIs customizadas (talvez serviços do fabricante).                               |
+| 24563/tcp          | `tcpwrapped`             | porta aceita conexão mas encerra sem banner.                                                 |
+| 32400/tcp          | `ssl/plex?`              | respostas HTTP `401 Unauthorized`; `/identity` expõe versão `1.42.1.10060-4e8b05daf`. |
+| 49740/tcp          | serviço JSON customizado  | banner retorna `{"type":"Tier1","version":"1.0"}`.                                          |
+| 57621/tcp          | desconhecido               | sem fingerprint, requer análise adicional.                                                   |
 
-- sistema: [nome e versão]
-- confiança: [nível de confiança da detecção]
-- evidências: [explicar como foi detectado]
+- **Detecção de sistema operacional:** nmap sugere windows 10/servidor 2008 com confiança ~90 %, porém os resultados são marcados como "não confiáveis" devido à ausência de portas fechadas para comparação.
+- **Superfície udp (`udp_top20.txt`):** diversas portas `open|filtered` típicas de windows/iot (53, 123, 135-139, 161/162, 1900, 500/4500). requer validação manual para confirmar se estão realmente abertas.
+- **Implicações:** presença de vnc exposto (5800/5900) e possíveis serviços plex/api elevam a superfície de ataque; recomenda-se na etapa 3 avaliar credenciais, restringir acesso ou desativar serviços desnecessários.
 
-**superfície de ataque identificada:**
+**Vulnerabilidades observadas (alvo 2):**
 
-[listar e descrever os pontos de entrada potenciais encontrados]
-
-**vulnerabilidades detectadas:**
-
-| # | serviço/sistema afetado | descrição da falha | severidade                   | cvss          | referência (cve) |
-| - | ------------------------ | -------------------- | ---------------------------- | ------------- | ----------------- |
-| 1 | [serviço]               | [descrição]        | [crítica/alta/média/baixa] | [pontuação] | [cve-id]          |
-| 2 | ...                      | ...                  | ...                          | ...           | ...               |
-
-#### alvo 2
-
-**serviços em execução:**
-
-| porta   | protocolo | serviço | versão   | estado           |
-| ------- | --------- | -------- | --------- | ---------------- |
-| [porta] | [tcp/udp] | [nome]   | [versão] | [aberta/fechada] |
-| ...     | ...       | ...      | ...       | ...              |
-
-**sistemas operacionais detectados:**
-
-- sistema: [nome e versão]
-- confiança: [nível de confiança da detecção]
-- evidências: [explicar como foi detectado]
-
-**superfície de ataque identificada:**
-
-[listar e descrever os pontos de entrada potenciais encontrados]
-
-**vulnerabilidades detectadas:**
-
-| # | serviço/sistema afetado | descrição da falha | severidade                   | cvss          | referência (cve) |
-| - | ------------------------ | -------------------- | ---------------------------- | ------------- | ----------------- |
-| 1 | [serviço]               | [descrição]        | [crítica/alta/média/baixa] | [pontuação] | [cve-id]          |
-| 2 | ...                      | ...                  | ...                          | ...           | ...               |
+| # | serviço/sistema afetado              | descrição da falha                                                                                                                            | severidade                                                                                                                     | referência                                                                                |
+| - | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| 1 | VNC (5800/5900/tcp)                   | Serviço RFB 3.8 exposto sem criptografia; tráfego pode ser interceptado/brute-forced, permitindo controle remoto completo do dispositivo.     | Alta (CVSS estimado 8.8)                                                                                                       | CWE-311 / RFC 6143 (ausência de proteção nativa); ver também CVE-2019-15681 (TightVNC) |
+| 2 | API HTTP desconhecida (8000/9000/tcp) | Servidores Go `net/http` respondendo sem autenticação; endpoints potencialmente não documentados podem aceitar chamadas não autorizadas.  | Média (CVSS estimado 6.5)                                                                                                     | CWE-306 (Missing Authentication for Critical Function)                                     |
+| 3 | Plex Media Server (32400/tcp)         | Interface TLS self-signed exposta;`/identity` revela versão `1.42.1.10060-4e8b05daf`. Apesar de atual, precisa de monitoramento constante. | Média (CVSS base 5.3 atual; 7.2 se versão vulnerável, ex. CVE-2023-24354)                                                   | CVE-2023-24354                                                                             |
+| 4 | Serviços udp (53/123/500/1900 etc.)  | Diversos serviços `open                                                                                                                        | filtered` sem necessidade aparente; mantê-los ativos amplia superfície para amplification ou exploits conhecidos (ex. UPnP). | Baixa                                                                                      |
 
 ---
 
-## 4. etapa 3 - documentação, análise de impacto e propostas de correção/mitigação
+## 4. Etapa 3 - documentação, análise de impacto e propostas de correção/mitigação
 
-### 4.1 vulnerabilidades do alvo 1
+### 4.1 Vulnerabilidades do alvo 1 (192.168.0.86)
 
-#### vulnerabilidade 1: [nome/título]
+os testes da etapa 2 não confirmaram serviços expostos nem vulnerabilidades exploráveis neste host macOS. o firewall bloqueou todas as portas tcp e udp avaliadas; portanto:
 
-**descrição:**
-[descrição detalhada da vulnerabilidade]
+- **Status atual:** nenhuma vulnerabilidade confirmada.
+- **Ações recomendadas:** manter o firewall habilitado, aplicar atualizações do macos e revisar periodicamente os serviços udp marcados como `open|filtered` (upnp, netbios) para garantir que continuem bloqueados ou desativados.
+- **Prioridade:** baixa (monitoramento preventivo).
 
-**análise do impacto:**
-[explicar o que um atacante poderia fazer se explorasse essa falha. descrever cenários de ataque e possíveis consequências]
+### 4.2 Vulnerabilidades do alvo 2
 
-**proposta de correção/mitigação:**
-[descrever soluções recomendadas para corrigir ou mitigar a vulnerabilidade. incluir passos específicos quando possível]
+#### Vulnerabilidade 1: VNC sem criptografia (portas 5800/5900)
 
-**prioridade:** [alta/média/baixa]
+**Descrição:** o dispositivo expõe serviço VNC (TightVNC, protocolo RFB 3.8) via http e tcp, sem tunneling seguro. o banner indica usuário configurado, porém a versão específica não é divulgada e não foi possível confirmar se patches recentes foram aplicados.
+**Análise do impacto:** um atacante na mesma rede pode realizar ataques de brute force à autenticação e, em caso de sucesso, assumir controle total do equipamento, capturando credenciais e pivotando para outros hosts. tráfego sem criptografia permite captura em trânsito.
+**Proposta de correção/mitigação:** desabilitar o VNC quando não for indispensável; caso necessário, restringir acesso a uma sub-rede de administração, exigir senhas fortes, habilitar túnel seguro (ssh, vpn ou zerotier), considerar migração para rdp com tls nativo e registrar tentativas de login.
+**Prioridade:** alta (cvss estimado 8,8; referência: cwe-311 e históricos de exploração como cve-2019-15681 em tightvnc desatualizado).
 
----
+#### Vulnerabilidade 2: APIs http sem autenticação (portas 8000/9000)
 
-#### vulnerabilidade 2: [nome/título]
+**Descrição:** servidores Golang `net/http` respondem com status 404 sem exigir credenciais. a ausência de autenticação pode indicar endpoints acessíveis quando URLs corretas forem descobertas.
+**Análise do impacto:** um atacante poderia realizar fuzzing/enumeração para encontrar endpoints internos, executar comandos administrativos ou obter dados sensíveis do dispositivo iot.
+**Proposta de correção/mitigação:** mapear as APIs expostas, habilitar autenticação por token/sessão, limitar acesso ao segmento administrativo e remover endpoints desnecessários.
+**Prioridade:** média (cvss estimado 6,5; referência: cwe-306 — missing authentication for critical function).
 
-**descrição:**
-[descrição detalhada da vulnerabilidade]
+#### Vulnerabilidade 3: plex media server exposto (porta 32400/tcp)
 
-**análise do impacto:**
-[explicar o que um atacante poderia fazer se explorasse essa falha]
+**Descrição:** interface plex responde com `401 Unauthorized`, certificado autoassinado e expõe versão `1.42.1.10060-4e8b05daf` no endpoint `/identity`. trata-se da release atual (nov/2025), mas versões anteriores sofreram rce (ex.: cve-2023-24354).
+**Análise do impacto:** se a instância for mantida atualizada, o risco cai para vazamento de metadados; caso desatualizada, um atacante pode explorar falhas conhecidas para executar código remoto, vazar mídia ou pivotar para o sistema operacional.
+**Proposta de correção/mitigação:** manter atualização contínua e monitorar avisos de segurança, restringir a porta 32400 a ip autorizados (firewall ou vpn) e exigir autenticação plex com mfa.
+**Prioridade:** média (cvss base 5,3 na versão atual; sobe para 7,2 se a aplicação ficar vulnerável como nas versões afetadas por cve-2023-24354).
 
-**proposta de correção/mitigação:**
-[descrever soluções recomendadas]
+#### Vulnerabilidade 4: serviços udp supérfluos
 
-**prioridade:** [alta/média/baixa]
+**Descrição:** portas udp como 53, 123, 137-138, 1900, 500/4500 permanecem `open|filtered`. se efetivamente abertas, oferecem superfície para reconhecimento, amplificação ou exploração (upnp, snmp).
+**Análise do impacto:** atacantes podem abusar de upnp (1900) para reconfigurar roteamentos, usar ntp/dns para amplificação ou explorar vulnerabilidades conhecidas de snmp/netbios.
+**Proposta de correção/mitigação:** executar varredura autenticada para confirmar quais serviços estão ativos, desativar funcionalidades não essenciais (upnp, snmp) e aplicar regras de firewall bloqueando udp onde não for utilizado.
+**Prioridade:** baixa/média (risco moderado dependendo do serviço realmente ativo).
 
----
+## 5. Conclusão
 
-[repetir para cada vulnerabilidade encontrada no alvo 1]
+**Resumo:** mapear e comparar dois alvos internos (macos protegido e dispositivo iot com múltiplos serviços) mostrou contrastes na postura de segurança da rede doméstica. a etapa 1 garantiu inventário completo; a etapa 2 revelou serviços críticos (vnc, plex, apis http) e a etapa 3 consolidou impacto/mitigações.
 
-### 4.2 vulnerabilidades do alvo 2
+**Principais descobertas:**
 
-#### vulnerabilidade 1: [nome/título]
+- `192.168.0.86` mantém firewall efetivo, sem portas tcp abertas; apenas monitoração preventiva é necessária.
+- `192.168.0.54` expõe vnc sem criptografia, apis http internas e plex acessível, ampliando riscos de controle remoto e vazamento.
+- serviços udp adicionais (upnp, snmp, isakmp) permanecem ativos/filtrados, aumentando superfície de ataque se habilitados.
 
-**descrição:**
-[descrição detalhada da vulnerabilidade]
+**Vulnerabilidades críticas encontradas:** 1 (vnc sem criptografia).
 
-**análise do impacto:**
-[explicar o que um atacante poderia fazer se explorasse essa falha]
+**Recomendações gerais:**
 
-**proposta de correção/mitigação:**
-[descrever soluções recomendadas]
-
-**prioridade:** [alta/média/baixa]
-
----
-
-[repetir para cada vulnerabilidade encontrada no alvo 2]
-
----
-
-## 5. conclusão
-
-[resumo geral dos achados da análise de ambos os alvos]
-
-**principais descobertas:**
-
-- [ponto 1]
-- [ponto 2]
-- [ponto 3]
-
-**vulnerabilidades críticas encontradas:** [número]
-
-**recomendações gerais:**
-[listar recomendações gerais de segurança baseadas nos achados]
-
-**importância das correções propostas:**
-[explicar a importância de implementar as correções e mitigações sugeridas]
+- substituir o acesso remoto por solução com túnel seguro (ssh/zerotier) ou rdp com tls, removendo o vnc aberto.
+- aplicar hardening no dispositivo iot: autenticação nas apis, limitar plex a vpn/firewall e desativar udp supérfluo.
+- manter inventário e realizar varreduras periódicas antes de cada alteração de rede.
 
 ---
 
@@ -236,21 +187,25 @@ os dois alvos pertencem integralmente ao grupo e podem ser avaliados sem risco j
 
 ### anexo a - evidências e logs
 
-[inserir screenshots, logs completos das ferramentas utilizadas, e outras evidências relevantes]
+- `resultados/20251110_223052_192_168_0_54/*`
+- `resultados/20251110_223542_192_168_0_86/*`
+- `resultados/etapa2/192.168.0.54/*`
+- `resultados/etapa2/192.168.0.86/*`
 
 ### anexo b - comandos executados
 
 ```
-[comandos utilizados durante a análise]
+wsl ./scripts/etapa1/coleta_informacoes.sh 192.168.0.54
+wsl ./scripts/etapa1/coleta_informacoes.sh 192.168.0.86
+wsl sudo nmap -sn -n 192.168.0.54
+wsl sudo nmap -sS -sV -O -T4 -p- 192.168.0.54
+wsl sudo nmap -sU --top-ports 20 -sV 192.168.0.54
+wsl sudo nmap -sn -Pn 192.168.0.86
+wsl sudo nmap -sS -sV -O -Pn -T4 -p- 192.168.0.86
+wsl sudo nmap -sU --top-ports 20 -sV -Pn 192.168.0.86
+wsl sudo nmap -sV --script vnc-info 192.168.0.54 -p 5900
+wsl curl -ki https://192.168.0.54:32400
+wsl curl -ks https://192.168.0.54:32400/identity
+wsl curl -i http://192.168.0.54:8000/
+wsl curl -i http://192.168.0.54:9000/
 ```
-
----
-
-## referências
-
-[listar referências utilizadas, incluindo:]
-
-- documentação das ferramentas
-- cve databases consultadas
-- artigos ou materiais de estudo
-- outras referências relevantes

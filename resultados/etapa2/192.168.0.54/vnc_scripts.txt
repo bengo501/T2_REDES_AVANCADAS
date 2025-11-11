@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Tue Nov 11 09:55:26 2025 as: nmap -sV -p 5800,5900 --script vnc-info,vnc-title -oN /mnt/c/Users/joxto/Downloads/T2_REDES_AVANCADAS/resultados/etapa2/192.168.0.54/vnc_scripts.txt 192.168.0.54
+Nmap scan report for 192.168.0.54
+Host is up (0.060s latency).
+
+PORT     STATE SERVICE  VERSION
+5800/tcp open  vnc-http TightVNC (user: fsos-7mpi809mcp; VNC TCP port: 5900)
+5900/tcp open  vnc      VNC (protocol 3.8)
+|_vnc-info: ERROR: Script execution failed (use -d to debug)
+|_vnc-title: ERROR: Script execution failed (use -d to debug)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov 11 09:55:49 2025 -- 1 IP address (1 host up) scanned in 22.73 seconds

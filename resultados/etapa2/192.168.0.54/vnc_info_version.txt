@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Tue Nov 11 10:09:16 2025 as: nmap -sV --script vnc-info -p 5900 -oN /mnt/c/Users/joxto/Downloads/T2_REDES_AVANCADAS/resultados/etapa2/192.168.0.54/vnc_info_version.txt 192.168.0.54
+Nmap scan report for 192.168.0.54
+Host is up (0.041s latency).
+
+PORT     STATE SERVICE VERSION
+5900/tcp open  vnc     VNC (protocol 3.8)
+|_vnc-info: ERROR: Script execution failed (use -d to debug)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov 11 10:09:33 2025 -- 1 IP address (1 host up) scanned in 17.09 seconds

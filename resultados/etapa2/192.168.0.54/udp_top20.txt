@@ -1,0 +1,28 @@
+# Nmap 7.80 scan initiated Tue Nov 11 00:10:35 2025 as: nmap -sU --top-ports 20 -sV -oN /mnt/c/Users/joxto/Downloads/T2_REDES_AVANCADAS/resultados/etapa2/192.168.0.54/udp_top20.txt 192.168.0.54
+Nmap scan report for 192.168.0.54
+Host is up (0.0035s latency).
+
+PORT      STATE         SERVICE      VERSION
+53/udp    open|filtered domain
+67/udp    open|filtered dhcps
+68/udp    open|filtered dhcpc
+69/udp    open|filtered tftp
+123/udp   open|filtered ntp
+135/udp   open|filtered msrpc
+137/udp   open|filtered netbios-ns
+138/udp   open|filtered netbios-dgm
+139/udp   open|filtered netbios-ssn
+161/udp   open|filtered snmp
+162/udp   open|filtered snmptrap
+445/udp   open|filtered microsoft-ds
+500/udp   open|filtered isakmp
+514/udp   open|filtered syslog
+520/udp   open|filtered route
+631/udp   open|filtered ipp
+1434/udp  open|filtered ms-sql-m
+1900/udp  open|filtered upnp
+4500/udp  open|filtered nat-t-ike
+49152/udp open|filtered unknown
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov 11 00:12:42 2025 -- 1 IP address (1 host up) scanned in 127.46 seconds

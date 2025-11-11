@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Tue Nov 11 10:13:06 2025 as: nmap -sV --version-all -p 5800,5900 -oN /mnt/c/Users/joxto/Downloads/T2_REDES_AVANCADAS/resultados/etapa2/192.168.0.54/vnc_version_all.txt 192.168.0.54
+Nmap scan report for 192.168.0.54
+Host is up (0.0042s latency).
+
+PORT     STATE SERVICE  VERSION
+5800/tcp open  vnc-http TightVNC (user: fsos-7mpi809mcp; VNC TCP port: 5900)
+5900/tcp open  vnc      VNC (protocol 3.8)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov 11 10:13:27 2025 -- 1 IP address (1 host up) scanned in 21.65 seconds

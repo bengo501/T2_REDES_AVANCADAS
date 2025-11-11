@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Nov 10 23:57:49 2025 as: nmap -sn -n -oN /mnt/c/Users/joxto/Downloads/T2_REDES_AVANCADAS/resultados/etapa2/192.168.0.54/host_discovery.txt 192.168.0.54
+Nmap scan report for 192.168.0.54
+Host is up (0.018s latency).
+# Nmap done at Mon Nov 10 23:57:50 2025 -- 1 IP address (1 host up) scanned in 0.31 seconds

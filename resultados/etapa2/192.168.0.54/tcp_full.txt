@@ -1,0 +1,68 @@
+# Nmap 7.80 scan initiated Mon Nov 10 23:58:24 2025 as: nmap -sS -sV -O -T4 -p- -oN /mnt/c/Users/joxto/Downloads/T2_REDES_AVANCADAS/resultados/etapa2/192.168.0.54/tcp_full.txt 192.168.0.54
+Nmap scan report for 192.168.0.54
+Host is up (0.0061s latency).
+Not shown: 65526 filtered ports
+PORT      STATE SERVICE    VERSION
+5800/tcp  open  vnc-http   TightVNC (user: fsos-7mpi809mcp; VNC TCP port: 5900)
+5900/tcp  open  vnc        VNC (protocol 3.8)
+7680/tcp  open  pando-pub?
+8000/tcp  open  http       Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+9000/tcp  open  http       Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+24563/tcp open  tcpwrapped
+32400/tcp open  ssl/plex?
+49740/tcp open  unknown
+57621/tcp open  unknown
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port32400-TCP:V=7.80%T=SSL%I=7%D=11/11%Time=6912A73E%P=x86_64-pc-linux-
+SF:gnu%r(GenericLines,109,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nX-Plex-Pr
+SF:otocol:\x201\.0\r\nContent-Length:\x2089\r\nContent-Type:\x20text/html\
+SF:r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nDate:\x20Tue,\
+SF:x2011\x20Nov\x202025\x2003:02:16\x20GMT\r\n\r\n<html><head><title>Bad\x
+SF:20Request</title></head><body><h1>400\x20Bad\x20Request</h1></body></ht
+SF:ml>")%r(GetRequest,173,"HTTP/1\.1\x20401\x20Unauthorized\r\nX-Plex-Prot
+SF:ocol:\x201\.0\r\nContent-Length:\x20193\r\nContent-Type:\x20text/html\r
+SF:\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nDate:\x20Tue,\x
+SF:2011\x20Nov\x202025\x2003:02:16\x20GMT\r\n\r\n<html><head><script>windo
+SF:w\.location\x20=\x20window\.location\.href\.match\(/\(\^\.\+\\/\)\[\^\\
+SF:/\]\*\$/\)\[1\]\x20\+\x20'web/index\.html';</script><title>Unauthorized
+SF:</title></head><body><h1>401\x20Unauthorized</h1></body></html>")%r(HTT
+SF:POptions,103,"HTTP/1\.1\x20404\x20Not\x20Found\r\nX-Plex-Protocol:\x201
+SF:\.0\r\nContent-Length:\x2085\r\nContent-Type:\x20text/html\r\nConnectio
+SF:n:\x20close\r\nCache-Control:\x20no-cache\r\nDate:\x20Tue,\x2011\x20Nov
+SF:\x202025\x2003:02:16\x20GMT\r\n\r\n<html><head><title>Not\x20Found</tit
+SF:le></head><body><h1>404\x20Not\x20Found</h1></body></html>")%r(RTSPRequ
+SF:est,103,"HTTP/1\.1\x20404\x20Not\x20Found\r\nX-Plex-Protocol:\x201\.0\r
+SF:\nContent-Length:\x2085\r\nContent-Type:\x20text/html\r\nConnection:\x2
+SF:0close\r\nCache-Control:\x20no-cache\r\nDate:\x20Tue,\x2011\x20Nov\x202
+SF:025\x2003:02:16\x20GMT\r\n\r\n<html><head><title>Not\x20Found</title></
+SF:head><body><h1>404\x20Not\x20Found</h1></body></html>")%r(RPCCheck,109,
+SF:"HTTP/1\.1\x20400\x20Bad\x20Request\r\nX-Plex-Protocol:\x201\.0\r\nCont
+SF:ent-Length:\x2089\r\nContent-Type:\x20text/html\r\nConnection:\x20close
+SF:\r\nCache-Control:\x20no-cache\r\nDate:\x20Tue,\x2011\x20Nov\x202025\x2
+SF:003:02:16\x20GMT\r\n\r\n<html><head><title>Bad\x20Request</title></head
+SF:><body><h1>400\x20Bad\x20Request</h1></body></html>")%r(DNSVersionBindR
+SF:eqTCP,109,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nX-Plex-Protocol:\x201\
+SF:.0\r\nContent-Length:\x2089\r\nContent-Type:\x20text/html\r\nConnection
+SF::\x20close\r\nCache-Control:\x20no-cache\r\nDate:\x20Tue,\x2011\x20Nov\
+SF:x202025\x2003:02:16\x20GMT\r\n\r\n<html><head><title>Bad\x20Request</ti
+SF:tle></head><body><h1>400\x20Bad\x20Request</h1></body></html>");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port49740-TCP:V=7.80%I=7%D=11/11%Time=6912A72C%P=x86_64-pc-linux-gnu%r(
+SF:NULL,22,"{\"type\":\"Tier1\",\"version\":\"1\.0\"}\r\n")%r(GenericLines
+SF:,22,"{\"type\":\"Tier1\",\"version\":\"1\.0\"}\r\n")%r(HTTPOptions,22,"
+SF:{\"type\":\"Tier1\",\"version\":\"1\.0\"}\r\n")%r(DNSVersionBindReqTCP,
+SF:22,"{\"type\":\"Tier1\",\"version\":\"1\.0\"}\r\n")%r(Help,22,"{\"type\
+SF:":\"Tier1\",\"version\":\"1\.0\"}\r\n")%r(SSLSessionReq,22,"{\"type\":\
+SF:"Tier1\",\"version\":\"1\.0\"}\r\n")%r(Kerberos,22,"{\"type\":\"Tier1\"
+SF:,\"version\":\"1\.0\"}\r\n")%r(X11Probe,22,"{\"type\":\"Tier1\",\"versi
+SF:on\":\"1\.0\"}\r\n")%r(SIPOptions,22,"{\"type\":\"Tier1\",\"version\":\
+SF:"1\.0\"}\r\n")%r(TerminalServer,22,"{\"type\":\"Tier1\",\"version\":\"1
+SF:\.0\"}\r\n")%r(NCP,22,"{\"type\":\"Tier1\",\"version\":\"1\.0\"}\r\n")%
+SF:r(JavaRMI,22,"{\"type\":\"Tier1\",\"version\":\"1\.0\"}\r\n");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Microsoft Windows 10 (94%), Microsoft Windows Server 2008 SP1 (91%), Microsoft Windows 10 1511 - 1607 (88%), Microsoft Windows 10 1703 (88%), Microsoft Windows Phone 7.5 or 8.0 (88%), Microsoft Windows 10 1511 (87%), Microsoft Windows Server 2008 R2 or Windows 8.1 (87%), Microsoft Windows Server 2016 (87%), Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7 (87%), FreeBSD 6.2-RELEASE (87%)
+No exact OS matches for host (test conditions non-ideal).
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov 11 00:02:51 2025 -- 1 IP address (1 host up) scanned in 267.50 seconds
